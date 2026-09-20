@@ -16,6 +16,16 @@ no internal names, no personal data. The implementation stays private.
 - `limits/LIMITS-REGISTER.md` — every known limit, with its current status.
 - `lessons/LESSONS.md` — the numbered lessons learned from the system's own mistakes.
 
+## Check it yourself (30 seconds)
+
+- `prove_it.py` — python verifier (needs: pip install cryptography)
+- `verify.sh` — openssl-only verifier (no python, no libraries)
+- `PUBLIC-VERIFICATION.md` — verify without trusting any code here (openssl first)
+- `sample-receipt.json` + `public-key.pem` — a signed receipt and the key to check it
+
+Run either one: `sh verify.sh` or `python prove_it.py` -> EVIDENCE VERIFIED.
+Then change one letter in sample-receipt.json, run it again -> it fails. Thats the point.
+
 ## The rules this repository lives by
 
 1. Facts only — every claim is tagged measured, observed, documented, or unknown.

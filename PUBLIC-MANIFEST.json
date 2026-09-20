@@ -2,7 +2,7 @@
   "files": {
     "LICENSE": "3be19c40106336cd3373bf563e7f969fd02895d9d6472b7923ec1ef167ee0f9d",
     "PUBLIC-VERIFICATION.md": "2a82ef980a7b1b8a147b5c8d785280b2d60cf3cf61067b31911175fb0a883799",
-    "README.md": "f69ffb69c36faa0eb76ca3cbac87885dc5320c3c6015b189623013bd322cf5a6",
+    "README.md": "94b0fc466c0e8927c1135a947ab4520f9e93a03e1a2a13302de15eaf060d739a",
     "governance/FOREVER-LIVE-DOCTRINE.md": "dc713b6699001f9d584dcf55325e58bcab4bbf9657a9a932d8ff4c2ee2ed25a3",
     "governance/PUM-SUITE-4000.md": "e95c2d1c10dbab66e7f4cb399d86f773a919bbed16336e80b952e36477d22152",
     "governance/PUM-SUITE-FACTBOOK-PUBLIC.md": "146273a4c89568925963b6efe8adfeced96f4c7dcfd07447bf97a7dc32e7e10b",
@@ -17,7 +17,7 @@
     "verify.sh": "93b594e264bd4a249f4dd645d005e3cd5c0ffa85979ebedaf3b9eefdb6e8963e",
     "verify_receipt.py": "ab700f3c2096e525370fe50c17ec4391f2c42d53cfa474129d3c4a696ce14777"
   },
-  "generated": "2026-09-20T16:37:40+0700",
-  "manifest_sha256": "5640c1a624e79828c287d31e99fb35aec7b4f2277a8bc6d72267a194e2e53b57",
+  "generated": "2026-09-20T16:46:39+0700",
+  "manifest_sha256": "091fa71aaa9083117453b8bb8b7a4ebda7291d0f1cb96a1413d5664e171434f2",
   "note": "Signed hash manifest of every published file, INCLUDING the verifiers. Any later edit breaks it."
 }
