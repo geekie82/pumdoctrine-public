@@ -11,7 +11,13 @@ import json
 import pathlib
 import sys
 
-from cryptography.hazmat.primitives import serialization
+try:
+    from cryptography.hazmat.primitives import serialization
+except ImportError:
+    print("FAIL  the 'cryptography' package is not installed")
+    print()
+    print("install it first:  pip install cryptography")
+    raise SystemExit(2)
 
 D = pathlib.Path(__file__).resolve().parent
 ok = True

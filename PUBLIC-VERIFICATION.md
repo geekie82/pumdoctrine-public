@@ -37,7 +37,7 @@ This root is published here so it cannot be quietly rewritten later: if the inte
 record is changed, the root no longer matches what was published today. A copy of the
 anchor is also held outside the main machine.
 
-prove_it.py sha256: `1f0b5781dfcbc25bddfd4e633bdc043e7bd4ea42fe1b0b4b677160d2d924fd85` (this document is covered by the signed manifest, so a tampered verifier contradicts it)
+prove_it.py sha256: `4a5bcc56affa482b9e1d1ceb451ffe8d9b74ef506b4bae75d4aa83c2cfc84cd9` (this document is covered by the signed manifest, so a tampered verifier contradicts it)
 
 ## It proves the signing system is real. It doesnt prove every claim.
 
