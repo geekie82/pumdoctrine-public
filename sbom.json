@@ -1,0 +1,140 @@
+{
+  "bomFormat": "CycloneDX-lite",
+  "components": [
+    {
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "3e2f62020a3c8aa23c94e1af57c56c874d236a1c71bdd502ac249a5cec788a64"
+        }
+      ],
+      "name": "LICENSE",
+      "type": "file"
+    },
+    {
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "45b9959413b84433c3a384b84a29f50d538e02d87a3f41038fa96ddf4c43da92"
+        }
+      ],
+      "name": "PUBLIC-MANIFEST.json",
+      "type": "file"
+    },
+    {
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "2a82ef980a7b1b8a147b5c8d785280b2d60cf3cf61067b31911175fb0a883799"
+        }
+      ],
+      "name": "PUBLIC-VERIFICATION.md",
+      "type": "file"
+    },
+    {
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "567e0ba55c6956b75890a0933ef6fc3fc58bd2b317056ecc97b28fbb8e5e8848"
+        }
+      ],
+      "name": "README.md",
+      "type": "file"
+    },
+    {
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "4a5bcc56affa482b9e1d1ceb451ffe8d9b74ef506b4bae75d4aa83c2cfc84cd9"
+        }
+      ],
+      "name": "prove_it.py",
+      "type": "file"
+    },
+    {
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "ee38358947370ba747d40fb9cb9a7a4b1e34f51f5860273f668b1d72c00f990d"
+        }
+      ],
+      "name": "public-key.pem",
+      "type": "file"
+    },
+    {
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "8592c983ea3f609abff361ea48c244c60ec4d5e23514eb5fd12a0b07e78b243a"
+        }
+      ],
+      "name": "sample-receipt.json",
+      "type": "file"
+    },
+    {
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "2a4b40038d8a5a70b5dcf3a958816a468d2fe62094dfbe425b25f7b6d16cec95"
+        }
+      ],
+      "name": "tampered-receipt.json",
+      "type": "file"
+    },
+    {
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "93b594e264bd4a249f4dd645d005e3cd5c0ffa85979ebedaf3b9eefdb6e8963e"
+        }
+      ],
+      "name": "verify.sh",
+      "type": "file"
+    },
+    {
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "ab700f3c2096e525370fe50c17ec4391f2c42d53cfa474129d3c4a696ce14777"
+        }
+      ],
+      "name": "verify_receipt.py",
+      "type": "file"
+    },
+    {
+      "name": "python3",
+      "properties": [
+        {
+          "name": "role",
+          "value": "runtime (stdlib only for verifiers)"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "name": "openssl",
+      "properties": [
+        {
+          "name": "role",
+          "value": "verify.sh Ed25519 + sha256 chain"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "name": "cryptography",
+      "properties": [
+        {
+          "name": "role",
+          "value": "prove_it.py/verify_receipt.py Ed25519"
+        }
+      ],
+      "type": "library"
+    }
+  ],
+  "metadata": {
+    "generated": "2026-09-21T00:15:25+0700",
+    "generator": "pumdoctrine make_sbom (tools/sbom.py)"
+  },
+  "specVersion": "1.5"
+}
