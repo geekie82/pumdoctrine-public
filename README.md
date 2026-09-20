@@ -26,3 +26,13 @@ no internal names, no personal data. The implementation stays private.
 
 *Every document here has been leak-scanned; the scan method is documented in the
 private repository.*
+
+## New in this edition (2026-09-20)
+
+- `governance/FOREVER-LIVE-DOCTRINE.md` — the always-on watcher, self-toggle,
+  systemd watchdog, dead-man's switch, Merkle anchoring, and the external witness.
+- `governance/VISION-ID-DOCTRINE.md` — face recognition: cameras, enrollment quality
+  gates, two-view presence checks, and its honest limits.
+
+The audit chain is Merkle-anchored and a copy is held on a second machine; the
+witness page itself stays on the owner's private network.

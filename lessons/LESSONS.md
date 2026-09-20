@@ -12,3 +12,14 @@ appended, never rewritten.
 7. The count is the artefact.
 8. A parser must be verified before a zero is trusted.
 9. A loop count is total cycles, not additional ones.
+
+23. After rotating a secret, restart every service that caches it at startup —
+    disk-correct is not service-correct.
+24. A proxy that normalizes messages must merge, not first-pick: dropped context is
+    invisible and produces confident false denials.
+25. Never enroll from the first camera frame: auto-exposure warmup frames are
+    near-black and produce garbage templates. Gate on brightness and detector
+    confidence.
+26. Publish negative results: the semantic search experiment did not beat keyword
+    search and failed off-topic traps at every threshold — measured, documented,
+    and deliberately not shipped as the default.
