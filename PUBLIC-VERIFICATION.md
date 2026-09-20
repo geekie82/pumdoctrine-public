@@ -1,0 +1,39 @@
+# Public verification
+
+You do not have to believe any claim in this repository. This page lets you check one.
+
+## What you can verify yourself (30 seconds)
+
+1. `sample-receipt.json` — a receipt produced by the system's signing key.
+2. `public-key.pem` — the public half of that key.
+3. `verify_receipt.py` — a standalone verifier that uses only the `cryptography`
+   library (no code from this system).
+
+```bash
+pip install cryptography
+python verify_receipt.py sample-receipt.json public-key.pem
+```
+
+Expected output: `OK: hash matches and the signature verifies against the public key`.
+
+If you edit one character of the receipt, it fails. That is the point.
+
+## The record root as of 2026-09-20
+
+- Records in the chain: **124438**
+- Merkle root: `0742858e9e08e4b21901c872f9422eebd606b836a9a2e0de8e4d4b0d036c423d`
+
+This root is published here so it cannot be quietly rewritten later: if the internal
+record is changed, the root no longer matches what was published today. A copy of the
+anchor is also held outside the main machine.
+
+## What this proves, and what it does not
+
+**Proves:** a real signing system produced this receipt, and the published root is a
+commitment to the record as of this date.
+
+**Does not prove:** that every claim in the documentation is true. It proves the
+evidence system is real; the claims still have to be checked one by one. That is why
+the limits register is published next to the wins.
+
+Corrections are appended, never rewritten.

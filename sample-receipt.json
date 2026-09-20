@@ -1,0 +1,14 @@
+{
+  "a_hash": "58cfac7a8dd32df55e5690b59fc241e1",
+  "hash": "b968efbfe0fb9725fa1c8b3f52d738a2f6170bde75f31efc3c46743d1d474242",
+  "model": "pumdoctrine",
+  "prev": "02125f64d3abae204d86b96f40e0d0916f164aa88c6d792bcb84b03203dd7fd9",
+  "pub": "ee38358947370ba7",
+  "purpose": "public verification sample",
+  "q_hash": "f2386174832948afe9dd9b255b70aea5",
+  "scope": "public-sample",
+  "sig": "aVHI/EjnHXqv0it37ftRFYN9Keq5cYimLLbaTKG7R5iXlSL6QBCosI5H639ge71CJBfPCG1k9GMcKD2nPAQBCg==",
+  "sig_alg": "ed25519",
+  "ts": 1789895782,
+  "verdict": "supported"
+}
