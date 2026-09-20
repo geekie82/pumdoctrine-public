@@ -37,7 +37,7 @@ This root is published here so it cannot be quietly rewritten later: if the inte
 record is changed, the root no longer matches what was published today. A copy of the
 anchor is also held outside the main machine.
 
-## What this proves, and what it does not
+## It proves the signing system is real. It doesnt prove every claim.
 
 **Proves:** a real signing system produced this receipt, and the published root is a
 commitment to the record as of this date.
