@@ -1,5 +1,7 @@
 # pumdoctrine — public governance layer
 
+*pumdoctrine is a product of Madame Hong Co. Ltd. — the same company behind pumOFFICE.*
+
 This repository contains **only the governance record** of pumdoctrine: the doctrine
 itself, its versions, the limits register, and the lesson list. It is the audit-first
 layer — published so the governance model can be read and discussed.
