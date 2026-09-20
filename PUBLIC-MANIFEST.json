@@ -1,7 +1,7 @@
 {
   "files": {
     "LICENSE": "3be19c40106336cd3373bf563e7f969fd02895d9d6472b7923ec1ef167ee0f9d",
-    "PUBLIC-VERIFICATION.md": "60c19a65e3b1291e9f2c932ffe4e33f2227af6837b2543df710bf67142c38767",
+    "PUBLIC-VERIFICATION.md": "dac7031f3f94a499b59928c492c98df0d074e612af17c216969b36a27f14e571",
     "README.md": "f69ffb69c36faa0eb76ca3cbac87885dc5320c3c6015b189623013bd322cf5a6",
     "governance/FOREVER-LIVE-DOCTRINE.md": "dc713b6699001f9d584dcf55325e58bcab4bbf9657a9a932d8ff4c2ee2ed25a3",
     "governance/PUM-SUITE-4000.md": "e95c2d1c10dbab66e7f4cb399d86f773a919bbed16336e80b952e36477d22152",
@@ -15,7 +15,7 @@
     "tampered-receipt.json": "2a4b40038d8a5a70b5dcf3a958816a468d2fe62094dfbe425b25f7b6d16cec95",
     "verify_receipt.py": "ab700f3c2096e525370fe50c17ec4391f2c42d53cfa474129d3c4a696ce14777"
   },
-  "generated": "2026-09-20T16:20:02+0700",
-  "manifest_sha256": "4aefcb714e0acc50d3a04b63f068b88dba259e81f1b00f80e204b73724a207db",
+  "generated": "2026-09-20T16:27:36+0700",
+  "manifest_sha256": "c1fac5e68e4c38810ead2adeb8f5c4d5b8d36896bcb25b23a754a2ba7a18b3ed",
   "note": "Signed hash manifest of every published file. Any later edit breaks it."
 }
