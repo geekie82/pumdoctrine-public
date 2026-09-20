@@ -18,6 +18,28 @@ Expected output: `OK: hash matches and the signature verifies against the public
 
 If you edit one character of the receipt, it fails. That is the point.
 
+## Verify without trusting any code in this repo
+
+Step 1 — openssl only (nothing from this repo):
+
+    base64 -d PUBLIC-MANIFEST.sig > /tmp/m.sig
+    openssl pkeyutl -verify -pubin -inkey public-key.pem -rawin -in PUBLIC-MANIFEST.json -sigfile /tmp/m.sig
+
+You should see: Signature Verified Successfully
+
+Step 2 — the manifest vouches for the verifiers. Compare:
+
+    sha256sum prove_it.py verify.sh
+
+with the hashes inside PUBLIC-MANIFEST.json.
+
+Step 3 — now run either verifier (two independent implementations that must agree):
+
+    sh verify.sh          (openssl only — no python, no libraries)
+    python prove_it.py    (needs: pip install cryptography)
+
+Expected: EVIDENCE VERIFIED from both.
+
 ## All four checks in one command
 
 \`\`\`bash
@@ -37,7 +59,6 @@ This root is published here so it cannot be quietly rewritten later: if the inte
 record is changed, the root no longer matches what was published today. A copy of the
 anchor is also held outside the main machine.
 
-prove_it.py sha256: `4a5bcc56affa482b9e1d1ceb451ffe8d9b74ef506b4bae75d4aa83c2cfc84cd9` (this document is covered by the signed manifest, so a tampered verifier contradicts it)
 
 ## It proves the signing system is real. It doesnt prove every claim.
 

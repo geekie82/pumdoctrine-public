@@ -1,7 +1,7 @@
 {
   "files": {
     "LICENSE": "3be19c40106336cd3373bf563e7f969fd02895d9d6472b7923ec1ef167ee0f9d",
-    "PUBLIC-VERIFICATION.md": "b17e9deb4515ff7991ee66ab65c31233650d0e7a79047b1324b0dfb73d683d63",
+    "PUBLIC-VERIFICATION.md": "2a82ef980a7b1b8a147b5c8d785280b2d60cf3cf61067b31911175fb0a883799",
     "README.md": "f69ffb69c36faa0eb76ca3cbac87885dc5320c3c6015b189623013bd322cf5a6",
     "governance/FOREVER-LIVE-DOCTRINE.md": "dc713b6699001f9d584dcf55325e58bcab4bbf9657a9a932d8ff4c2ee2ed25a3",
     "governance/PUM-SUITE-4000.md": "e95c2d1c10dbab66e7f4cb399d86f773a919bbed16336e80b952e36477d22152",
@@ -10,12 +10,14 @@
     "governance/VISION-ID-DOCTRINE.md": "8f886a52b4d34c7c1977b32e7abfb19e299cac6276efe58286690a4a279c13ad",
     "lessons/LESSONS.md": "ffe2a0a16dd29cebf5d66ac41ae28d3f22bdad35bee2e9b45a3e95fa0d0bb804",
     "limits/LIMITS-REGISTER.md": "d01117dd57d88fd359e0ad9b42f16eb1a015dce2b4bfaa9726b67533684b021a",
+    "prove_it.py": "4a5bcc56affa482b9e1d1ceb451ffe8d9b74ef506b4bae75d4aa83c2cfc84cd9",
     "public-key.pem": "ee38358947370ba747d40fb9cb9a7a4b1e34f51f5860273f668b1d72c00f990d",
     "sample-receipt.json": "8592c983ea3f609abff361ea48c244c60ec4d5e23514eb5fd12a0b07e78b243a",
     "tampered-receipt.json": "2a4b40038d8a5a70b5dcf3a958816a468d2fe62094dfbe425b25f7b6d16cec95",
+    "verify.sh": "93b594e264bd4a249f4dd645d005e3cd5c0ffa85979ebedaf3b9eefdb6e8963e",
     "verify_receipt.py": "ab700f3c2096e525370fe50c17ec4391f2c42d53cfa474129d3c4a696ce14777"
   },
-  "generated": "2026-09-20T16:29:53+0700",
-  "manifest_sha256": "114a9b63548b8a5cb0eb0f64b419f41163a43075736cd2f97e938774aaeef8c0",
-  "note": "Signed hash manifest of every published file. Any later edit breaks it."
+  "generated": "2026-09-20T16:37:40+0700",
+  "manifest_sha256": "5640c1a624e79828c287d31e99fb35aec7b4f2277a8bc6d72267a194e2e53b57",
+  "note": "Signed hash manifest of every published file, INCLUDING the verifiers. Any later edit breaks it."
 }
