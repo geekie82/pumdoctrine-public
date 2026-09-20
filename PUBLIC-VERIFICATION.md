@@ -18,6 +18,16 @@ Expected output: `OK: hash matches and the signature verifies against the public
 
 If you edit one character of the receipt, it fails. That is the point.
 
+## All four checks in one command
+
+\`\`\`bash
+python prove_it.py
+\`\`\`
+
+Expected: four PASS lines and \`EVIDENCE VERIFIED\`. It checks the receipt signature,
+that a one-character edit is rejected, that every published file matches the signed
+manifest, and that the manifest signature is valid.
+
 ## The record root as of 2026-09-20
 
 - Records in the chain: **124438**

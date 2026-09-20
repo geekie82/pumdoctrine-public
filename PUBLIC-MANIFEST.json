@@ -1,0 +1,21 @@
+{
+  "files": {
+    "LICENSE": "3be19c40106336cd3373bf563e7f969fd02895d9d6472b7923ec1ef167ee0f9d",
+    "PUBLIC-VERIFICATION.md": "c5eb741761f40bc0fef05b3362e02ed0a88e361a1fd9bae4cd0568618ae3521f",
+    "README.md": "f69ffb69c36faa0eb76ca3cbac87885dc5320c3c6015b189623013bd322cf5a6",
+    "governance/FOREVER-LIVE-DOCTRINE.md": "dc713b6699001f9d584dcf55325e58bcab4bbf9657a9a932d8ff4c2ee2ed25a3",
+    "governance/PUM-SUITE-4000.md": "e95c2d1c10dbab66e7f4cb399d86f773a919bbed16336e80b952e36477d22152",
+    "governance/PUM-SUITE-FACTBOOK-PUBLIC.md": "146273a4c89568925963b6efe8adfeced96f4c7dcfd07447bf97a7dc32e7e10b",
+    "governance/PUMDOCTRINE-EXPLAINED.md": "1a1cc6375a955ee706b2b5d43acbf8b7a1e7556dffa40a0f6a59c4845db14472",
+    "governance/VISION-ID-DOCTRINE.md": "8f886a52b4d34c7c1977b32e7abfb19e299cac6276efe58286690a4a279c13ad",
+    "lessons/LESSONS.md": "ffe2a0a16dd29cebf5d66ac41ae28d3f22bdad35bee2e9b45a3e95fa0d0bb804",
+    "limits/LIMITS-REGISTER.md": "d01117dd57d88fd359e0ad9b42f16eb1a015dce2b4bfaa9726b67533684b021a",
+    "public-key.pem": "ee38358947370ba747d40fb9cb9a7a4b1e34f51f5860273f668b1d72c00f990d",
+    "sample-receipt.json": "8592c983ea3f609abff361ea48c244c60ec4d5e23514eb5fd12a0b07e78b243a",
+    "tampered-receipt.json": "2a4b40038d8a5a70b5dcf3a958816a468d2fe62094dfbe425b25f7b6d16cec95",
+    "verify_receipt.py": "ab700f3c2096e525370fe50c17ec4391f2c42d53cfa474129d3c4a696ce14777"
+  },
+  "generated": "2026-09-20T16:19:17+0700",
+  "manifest_sha256": "1c2052d716281aa2a61947130dca48140933024a6fc4472f8fac43f63ee3209d",
+  "note": "Signed hash manifest of every published file. Any later edit breaks it."
+}
