@@ -2,12 +2,15 @@
 
 *pumdoctrine is a product of Madame Hong Co. Ltd. — the same company behind pumOFFICE.*
 
-This repository contains **only the governance record** of pumdoctrine: the doctrine
-itself, its versions, the limits register, and the lesson list. It is the audit-first
-layer — published so the governance model can be read and discussed.
+This repository is the **public governance record** of pumdoctrine: the doctrine
+documents, the limits register, the lesson list, the external-verification log, and a
+published audit case study. Alongside them are the standalone verification scripts and
+sample receipts needed to check the record. It is the audit-first layer — published so
+the governance model can be read and discussed.
 
-**What is deliberately NOT here:** no source code, no infrastructure, no credentials,
-no internal names, no personal data. The implementation stays private.
+**What is deliberately NOT here:** no product source code, no infrastructure, no
+credentials, no internal names, no personal data. The implementation stays private; the
+small verification scripts are published on purpose, so the record can be checked.
 
 ## Contents
 
@@ -17,6 +20,9 @@ no internal names, no personal data. The implementation stays private.
 - `governance/PUM-SUITE-4000.md` — a short summary of the whole thing.
 - `limits/LIMITS-REGISTER.md` — every known limit, with its current status.
 - `lessons/LESSONS.md` — the numbered lessons learned from the system's own mistakes.
+- `EXTERNAL-VERIFICATIONS.md` — the log of checks made by people outside this project.
+- `case-studies/navier-stokes-2026-09-14/` — an audit case study with re-runnable
+  verification scripts.
 
 ## Check it yourself (30 seconds)
 
@@ -34,17 +40,23 @@ Then change one letter in sample-receipt.json, run it again -> it fails. Thats t
 2. Corrections are appended, never rewritten.
 3. Verify the artefact, never the summary.
 4. Additive only — nothing external may restrict the system or its owner.
-5. No code, no secrets, no personal data, ever.
+5. No product code, no secrets, no personal data, ever.
 
 *Every document here has been leak-scanned; the scan method is documented in the
 private repository.*
 
-## New in this edition (2026-09-20)
+## New in this edition (2026-09-23)
 
-- `governance/FOREVER-LIVE-DOCTRINE.md` — the always-on watcher, self-toggle,
-  systemd watchdog, dead-man's switch, Merkle anchoring, and the external witness.
-- `governance/VISION-ID-DOCTRINE.md` — face recognition: cameras, enrollment quality
-  gates, two-view presence checks, and its honest limits.
+- `EXTERNAL-VERIFICATIONS.md` — the log of checks made by people outside this project.
+  It is empty on purpose: an entry is only added after a real outside check, and the
+  log is published now, before any prospect asks.
+- `verify.sh` — a second, openssl-only verifier (no python, no libraries); both
+  verifiers must agree on `EVIDENCE VERIFIED`.
+- `governance/FOREVER-LIVE-DOCTRINE.md`, `governance/PUM-SUITE-FACTBOOK-PUBLIC.md`,
+  `governance/VISION-ID-DOCTRINE.md`, and `limits/LIMITS-REGISTER.md` — re-synced from
+  the current private documents.
+- `PUBLIC-MANIFEST.json` + `PUBLIC-MANIFEST.sig` — re-signed for this edition; the
+  manifest covers every published file, including the verifiers.
 
 The audit chain is Merkle-anchored and a copy is held on a second machine; the
 witness page itself stays on the owner's private network.
