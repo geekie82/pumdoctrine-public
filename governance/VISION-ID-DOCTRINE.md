@@ -6,7 +6,7 @@ Tool: `pumoffice/tools/vision_id.py`. Research: `docs/agent/FACE-SECURITY-RESEAR
 
 ## 1. Purpose and policy
 
-Forgey may recognize people at the camera on owner order. Policy (owner directive
+[service] may recognize people at the camera on owner order. Policy (owner directive
 2026-09-18): only the owner and one authorized family member; anyone else -> "unknown"
 and refuse. Refs live in `the private face-template directory` (0700, files 0600). Biometric
 templates are on-device only, never sent anywhere, deletable with one command

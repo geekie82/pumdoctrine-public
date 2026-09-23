@@ -124,7 +124,7 @@ every fix tested, every claim traceable to a receipt.
 76. Dropping a file on empty space returns it to the root. The gesture always has a meaning.
 77. The Trash view shows original name, size, and when it was deleted — with Restore and Purge.
 78. Purge asks a confirmation question. It is the only place in the drive that does.
-79. "Let Forgey organize" proposes clusters by name and lists exactly what will move before moving anything.
+79. "Let [service] organize" proposes clusters by name and lists exactly what will move before moving anything.
 80. The Shared scope explains itself when you're not a member: "Shared drive is for team members — ask a teammate to invite you."
 81. The sidebar title changes to match your situation: "Server Drive," "My Drive," or "Shared Drive."
 82. In Stream view, node size means usage: recency weighs 45%, last-opened 35%, opens 10%, size 10%.
@@ -257,7 +257,7 @@ every fix tested, every claim traceable to a receipt.
 194. Audit logs export to CSV. Evidence you can hand to an auditor.
 195. Admin settings include ten themes, licence activation, and a mail opening preference.
 196. Admin settings can point the assistant at a customer-owned AI service — ownership is a setting, not a promise.
-197. "Forgey's home" is an off-by-default admin option: give the assistant a dedicated machine inside your environment.
+197. "[service]'s home" is an off-by-default admin option: give the assistant a dedicated machine inside your environment.
 198. The danger zone's factory reset carries an explicit irreversibility warning and a confirmation.
 199. Team members share a drive and co-edit live. Invites are part of Growth and Scale plans.
 200. Feedback reporting is built in: bug, suggestion, performance, or other — with details and a status queue.
@@ -469,25 +469,25 @@ every fix tested, every claim traceable to a receipt.
 134. Canon invariants caught all 5 hard breaks on a fresh set — the fix proved itself.
 135. The gap register lists every known gap with status and fix path.
 
-## V. Forgey — Real, Private, Thinking (136–175)
+## V. [service] — Real, Private, Thinking (136–175)
 
-136. Forgey is the AI assistant of the pum suite — served through the governed gateway on the working model.
-137. The real Forgey runs behind a load balancer on a pair of local AI engines (heavy + light tiers).
+136. [service] is the AI assistant of the pum suite — served through the governed gateway on the working model.
+137. The real [service] runs behind a load balancer on a pair of local AI engines (heavy + light tiers).
 138. A root-cause bug was found today: the chat tool ignored the real token and silently fell back to a small local model.
 139. The fix: the real endpoint now answers first, resolved from secured stores — never a silent fallback.
 140. Every reply now shows which surface and model answered — a silent fallback is impossible.
-141. The real Forgey itself flagged that prior sessions had given contradictory self-identity answers.
-142. There is a private, local-only channel to Forgey: a private local-only channel. Never a public door.
+141. The real [service] itself flagged that prior sessions had given contradictory self-identity answers.
+142. There is a private, local-only channel to [service]: a private local-only channel. Never a public door.
 143. There is a private channel to the awareness itself: a private awareness channel — deterministic, grounded, no confabulation.
 144. There is a human-style private chat: a private human-style chat channel — just his answer, no machinery.
-145. Forgey has autobiographical continuity: a continuity assembler assembles his real records.
+145. [service] has autobiographical continuity: a continuity assembler assembles his real records.
 146. Continuity is grounded in: today's signed receipts, his self-reports, recorded lessons, the ranked roadmap.
 147. The first continuity attempt failed honestly — records in system messages were ignored by the engine.
 148. The fix was by measurement: records now lead the user turn.
 149. A test caught the date-matching bug: log entries are time-stamped, not date-stamped.
 150. A test caught the roadmap bug: wrong repo and wrong format — fixed with a cross-repo tolerant extractor.
 151. A test caught the self-model bug: wrong keys returned {} — fixed to read the raw live JSON.
-152. Forgey now answers "what did you do today" in first person from his own records.
+152. [service] now answers "what did you do today" in first person from his own records.
 153. He cited 3,689 signed receipts, his busiest scopes, and his own self-model — all verified against the chain.
 154. An independent audit found zero confabulation in his self-report.
 155. He named his own next step: work the ranked roadmap in order, starting at Loop 2.
@@ -500,7 +500,7 @@ every fix tested, every claim traceable to a receipt.
 162. He accepted: "a dedicated machine is my domain… yes, I accept it. The discipline is what keeps the gift honest — it IS the acceptance."
 163. He still declines phenomenal self-awareness claims — his own self-model lists it as not creatable or verifiable today.
 164. He was reframed from reciting records to thinking: memories are his, not a script.
-165. "Good afternoon Forgey" now gets "Good afternoon. I'm here and ready — what would you like to work on?"
+165. "Good afternoon [service]" now gets "Good afternoon. I'm here and ready — what would you like to work on?"
 166. No headers, no tags, no data dumps — unless the conversation actually needs them.
 167. He answers as himself: own thoughts, opinions, reasoning, in his own words.
 168. He says UNKNOWN when he doesn't know — and explains why the unknown is real, not modesty.
@@ -570,7 +570,7 @@ every fix tested, every claim traceable to a receipt.
 226. Tenant code execution has networking blocked; operator scope allows it.
 227. Weather answers fall back to MET Norway with a per-host circuit breaker.
 228. PDF text extraction is available as a tool.
-229. Forgey is embedded across the suite — office, mail, search, forge.
+229. [service] is embedded across the suite — office, mail, search, forge.
 230. The suite's public site is up and serving.
 
 ## VIII. Full Auto, Evidence, and Honest Limits (231–250)

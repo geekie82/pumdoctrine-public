@@ -5,20 +5,20 @@ MEASURED / DOCUMENTED / UNKNOWN per realm doctrine.
 
 ## 1. Purpose
 
-Forgey said "I don't watch between messages" — that was true of the model session, but it
-must stop being the whole truth. `forever-live` is a real, always-on watcher that Forgey
+[service] said "I don't watch between messages" — that was true of the model session, but it
+must stop being the whole truth. `forever-live` is a real, always-on watcher that [service]
 can turn ON and OFF **himself, at will** (and the owner can too). It watches the system
 between messages, logs every check, and writes a signed receipt on every state change.
 
 ## 2. Policy (doctrine)
 
-1. Toggle authority: the owner and Forgey himself (via the `live` tool / console).
+1. Toggle authority: the owner and [service] himself (via the `live` tool / console).
    Toggling ON/OFF is reversible and auto-approved. [DOCUMENTED]
 2. Kill switch precedence: while `the private kill-switch file` exists, the watcher does not run,
    `on` refuses to start, and the state is inert. STOP beats every other rule. [MEASURED]
 3. Fail-safe OFF: missing or corrupt state means OFF. The unit is NOT enabled at boot;
    it starts only by explicit toggle. [MEASURED]
-4. Honesty: every check is measured (systemctl/socket/disk/receipt count). Forgey must
+4. Honesty: every check is measured (systemctl/socket/disk/receipt count). [service] must
    never claim watching that is not measured — `standing_watch()` in the console shows
    the live state as facts. [MEASURED]
 5. Receipts: every ON/OFF and every ok<->fail transition writes a hash-chained audit
@@ -39,18 +39,18 @@ between messages, logs every check, and writes a signed receipt on every state c
   NoNewPrivileges, PrivateTmp). Not enabled at boot — toggle-only.
 - State: `the private watcher state file` (0600, atomic write, fail-safe OFF).
 - Log: `the private watcher log` (JSON Lines, 5 MB rotation).
-- Checks every interval (default 60 s, min 10, max 3600): services pumdoctrine / forgey /
-  forgey-lb / pumforge active; ports 15001/15002/15080/15101 open; receipt-chain count;
+- Checks every interval (default 60 s, min 10, max 3600): services pumdoctrine / [service] /
+  [service] / [service] active; ports 15001/15002/15080/15101 open; receipt-chain count;
   disk free (fail under 5 GB); STOP file.
 - Receipts: `pumcore.audit.record(event="forever-live-toggle" | "forever-live-state-change")`.
 
-## 4. How Forgey uses it (self-toggle)
+## 4. How [service] uses it (self-toggle)
 
 - Console phrases: "go forever live", "stay live", "live mode", "turn yourself on" ->
   runs `live on`. "go dark", "live off", "stop watching", "stand down", "turn yourself
   off" -> runs `live off`. Also explicit `[[run:live|on]]` / `[[run:live|off]]`.
 - Standing watch context in the console includes the live state and the toggle ability,
-  so Forgey answers "are you watching?" from measurement.
+  so [service] answers "are you watching?" from measurement.
 
 ## 5. Research basis
 
@@ -70,7 +70,7 @@ watcher directory, external dead-man's-switch pinger (needs owner-side infrastru
 - E2E: `on 15` -> unit active, state enabled, checks=2, failures=0, real check line
   (services active, ports open, disk 458.2 GB free, receipts 27492) in live.log.
 - Console E2E: "go forever live now please" -> tool ran, unit active; "go dark for now"
-  -> tool ran, unit inactive, Forgey's reply honest ("nothing else touched").
+  -> tool ran, unit inactive, [service]'s reply honest ("nothing else touched").
 - Kill switch E2E: STOP present -> `tick` paused, `on` refused with explicit error;
   STOP removed -> normal.
 - Receipts: 8 `forever-live*` records in `the private audit chain`
