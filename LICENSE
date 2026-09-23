@@ -1,6 +1,6 @@
 Copyright (c) 2026 Madame Hong Co. Ltd. All rights reserved.
 
-This repository contains governance documentation only. No source code is published here.
+This repository contains governance documentation and the published verifier scripts (prove_it.py, verify.sh). No product source code is published here.
 
 No permission is granted to copy, modify, distribute, republish, or reuse the pum suite
 name, architecture, designs, documents, or any part of the system described, in whole or
