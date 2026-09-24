@@ -60,3 +60,20 @@ Each limit is published next to the wins, on purpose.
   same cycle. This is not claimed as an improvement — the eval expectations were
   tightened so the expected domains became the standards bodies themselves, and the
   comparison is not like-for-like. Published as such on purpose.
+- **Publish gate (leak + claim, fail-closed).** Every public publish now runs a leak
+  gate (21 leak patterns) and a claim gate; any leak or unsupported claim refuses the
+  publish. `--skip-claims` is a documented escape hatch, and its use is logged.
+- **Claim triage result (measured 2026-09-24).** The claim oracle ran over all public
+  surfaces: 234 supported, 157 exempt, 0 unsupported (391 candidates; receipt `929683ec`).
+- **Measurement tooling (five tools):**
+  - Usage reconciliation — hourly usage exports reconciled against recorded usage.
+  - Cold-cache A/B harness — capped, controlled before/after runs for cache behaviour.
+  - Signed cost receipts — 17 required fields, signed, hash-chained, tamper-evident.
+  - Usage accounting — usage exported in the official telemetry attribute scheme,
+    with receipt and doctrine-hash extensions.
+  - Claim oracle — every numeric or superlative claim in public text is
+    verdict-tagged; unsupported claims refuse the publish.
+- **Time layering — honest status.** The term is under investigation: every mechanism
+  exists separately in the literature; the composition is unproven; claim-checked,
+  not claimed. Usage exports reconcile to zero discrepancy across all hourly cells
+  (measured, receipt available).

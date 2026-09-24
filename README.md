@@ -18,6 +18,8 @@ verified, and discussed.
 - `lessons/LESSONS.md` — numbered lessons from real failures.
 - `EXTERNAL-VERIFICATIONS.md` — log of outside checks (empty until real entries exist).
 - `case-studies/navier-stokes-2026-09-14/` — audit case study with re-runnable verification scripts.
+- Measurement tooling — usage reconciliation, signed cost receipts, and an enforced
+  claim gate that refuses to publish unsupported claims.
 
 ## Verify it yourself (30 seconds)
 
@@ -41,15 +43,17 @@ Change one letter in sample-receipt.json, run again → it fails. That's the poi
 6. Scars are curated and disclosed — gate changes (e.g. authoritative-domain bypass)
    are docstring-documented, provenance-tagged, and logged in the training ledger.
 
-## New in this edition (2026-09-23)
+## New in this edition (2026-09-24)
 
-- `EXTERNAL-VERIFICATIONS.md` — published before any prospect asks.
-- `verify.sh` — second verifier; both must agree on EVIDENCE VERIFIED.
-- `governance/FOREVER-LIVE-DOCTRINE.md`, `governance/PUM-SUITE-FACTBOOK-PUBLIC.md`,
-  `governance/VISION-ID-DOCTRINE.md`, `limits/LIMITS-REGISTER.md` — re-synced from
-  private documents.
-- `PUBLIC-MANIFEST.json` + `PUBLIC-MANIFEST.sig` — re-signed; the manifest covers every
-  published file, including the verifiers.
+- The claim gate is enforced at publish: dishonest statements cannot ship, and
+  unsupported claims are zero across all public surfaces.
+- Measurement tooling (five tools): usage reconciliation, a cold-cache A/B harness,
+  signed cost receipts, usage accounting, and a claim oracle.
+- Training ledger reference: learning cycles 1-10, scars, and receipts are tracked in
+  the training ledger; dated entries are disclosed in `limits/LIMITS-REGISTER.md`.
+- Cost-efficiency investigation (honest status): production cost telemetry is under
+  investigation; prior art has been mapped (~3,900 sources [M 2026-09-24]); no
+  efficiency claim is made until measurements reconcile.
 
 The audit chain is Merkle-anchored and a copy is held on a second machine; the witness
 page itself remains private.
