@@ -13,6 +13,8 @@ verified, and discussed.
 - `governance/PUM-SUITE-FACTBOOK-PUBLIC.md` — fact book (12 pillars + 500 facts).
 - `governance/PUM-SUITE-4000.md` — short summary.
 - `limits/LIMITS-REGISTER.md` — every known limit, with current status.
+- Training ledger — governance learning cycles, disclosed as dated scar entries in
+  `limits/LIMITS-REGISTER.md` (ledger row + receipt hash per scar).
 - `lessons/LESSONS.md` — numbered lessons from real failures.
 - `EXTERNAL-VERIFICATIONS.md` — log of outside checks (empty until real entries exist).
 - `case-studies/navier-stokes-2026-09-14/` — audit case study with re-runnable verification scripts.
@@ -36,6 +38,8 @@ Change one letter in sample-receipt.json, run again → it fails. That's the poi
 5. No product code, no secrets, no personal data, ever. The verifier scripts are
    published on purpose; every document is leak-scanned, and the scan method is
    documented privately.
+6. Scars are curated and disclosed — gate changes (e.g. authoritative-domain bypass)
+   are docstring-documented, provenance-tagged, and logged in the training ledger.
 
 ## New in this edition (2026-09-23)
 

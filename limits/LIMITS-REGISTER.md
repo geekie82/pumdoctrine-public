@@ -45,3 +45,18 @@ Each limit is published next to the wins, on purpose.
   (location and addresses withheld by policy). No hostnames or IPs are published.
 - License terms remain intentionally unpublished pending legal review: the current
   LICENSE grants nothing. No pricing, availability or partner claim is made here.
+
+## 2026-09-24 additions (measured)
+
+- **Scar-10 — authoritative-domain bypass (training gate).** The brain-ingest
+  training gate was blocking standards bodies whose pages never phrase-match the
+  search snippets, so their content could not be learned. A curated list of
+  authoritative domains is now admitted regardless of relevance: `spdx.dev`,
+  `cyclonedx.org`, `sigstore.dev`, `slsa.dev`, `in-toto.io`, `theupdateframework.org`,
+  `nist.gov`, `cisa.gov`. The change is docstring-documented and kept small;
+  `UNVERIFIED` tags on stored content are unchanged; provenance is still recorded per
+  entry (URL, fetch time, sha256). Training ledger row 10, receipt `a921cb5e`.
+- **Honest eval note:** the supply-chain eval MRR moved from 0.658 to 0.567 in the
+  same cycle. This is not claimed as an improvement — the eval expectations were
+  tightened so the expected domains became the standards bodies themselves, and the
+  comparison is not like-for-like. Published as such on purpose.
