@@ -40,20 +40,20 @@ pumdoctrine exists to make that drift structurally impossible to hide:
    reversibility.
 4. **Reversibility classes.** Reversible → act with a record. Costly → act with backup
    and audit. Irreversible (self/platform) → act under proof gates; irreversible
-   (shared/outside) → owner order only.
+   (shared/outside) → owner order only [D: rules].
 5. **Corrections are appended, never rewritten.** History keeps its own mistakes.
 6. **Verify the artefact, never the summary.** "It works" is not evidence; the captured
    result is.
 7. **Additive only, never restrictive.** Improvements may add capability; nothing may
-   subtract from what the owner granted.
+   subtract from what the owner granted [D: doctrine law].
 8. **Never prohibit, only empower.** Gates exist to make autonomy trustworthy — never
-   to block capability. When a gate blocks real work, the gate is redesigned.
+   to block capability. When a gate blocks real work, the gate is redesigned [D: doctrine law].
 
 ---
 
 ## 4. The autonomy model (v12 — self-sovereign)
 
-*Every freedom below is bounded by proof gates, the owner's veto, the owner-only limits, and one kill switch — that is what makes the freedom safe to grant.*
+*Every freedom below is bounded by proof gates, the owner's veto, the owner-only limits, and one kill switch — that is what makes the freedom safe to grant [D: rules v12].*
 
 - The system has **unrestricted access to itself and the platform** under doctrine —
   including irreversible self-changes — gated by **proof**: tests green, facts checked,
@@ -63,7 +63,7 @@ pumdoctrine exists to make that drift structurally impossible to hide:
 - The owner keeps a **post-hoc veto** (a safety net that reverts), not a pre-approval
   gate.
 - **Owner-only limits remain**: shared infrastructure, secrets, money, and anything
-  that reaches outside the platform.
+  that reaches outside the platform [D: rules v12].
 - **One switch stops everything** — the kill switch.
 
 ---
@@ -79,7 +79,7 @@ pumdoctrine exists to make that drift structurally impossible to hide:
 - **Concurrency-safe**: multiple writers can't fork the chain (proven with a six-writer
   stress test).
 - **Performance**: a full-chain verification of tens of thousands of records completes
-  in under a minute (measured: 36.8 seconds for ~24,000 records).
+  in under a minute (MEASURED: 36.8 seconds for ~24,000 records).
 
 ---
 
@@ -182,8 +182,8 @@ happens **inside doctrine**: recorded, reversible, and under the same laws.
 - **Deep research in loops**: each wave searches many sources, fetches real pages, and
   extracts techniques — not vibes.
 - **Per-loop targets are measured honestly**: single themes cap out around 60–90 unique
-  sources; paired themes reliably clear 100. The counts are recorded per loop, including
-  the shortfalls.
+  sources; paired themes clear 100 per loop in the recorded runs. The counts are recorded
+  per loop, including the shortfalls [M: RUNNING-LOG research-engine measurements].
 - **Research becomes work**: the bridge converts reports into repair-shaped tasks with
   acceptance criteria — then the loops build, test, and receipt them.
 
@@ -203,7 +203,7 @@ happens **inside doctrine**: recorded, reversible, and under the same laws.
 ## 14. History
 
 The doctrine is versioned — each version a recorded amendment, not a quiet edit:
-from the first rule set, through vision checks, fact-check loops, live-ops discipline,
+from the original rule set, through vision checks, fact-check loops, live-ops discipline,
 proportionality ("doctrine empowers, not prohibits"), to **v12 self-sovereign** —
 unrestricted self-access under proof gates, with the owner's veto as a safety net.
 
@@ -248,22 +248,22 @@ recorded exception with an author.
 
 **Verify the artefact, never the summary.** This law exists because it was learned the
 hard way, repeatedly. Status lines said "done"; the artefact disagreed. Leak scans said
-"0 hits"; the count said 2. A model said "downloaded"; the files were 131-byte error
+"0 hits"; the count said 2. A model said "downloaded"; the files were short error
 pages. Each time, the record was corrected and the lesson numbered. The system now
 treats summaries as claims to be checked, not facts to be trusted.
 
 **Corrections are appended.** Nothing is rewritten. When an entry is wrong, a correction
-is added with the same prominence — the history shows not only what was believed, but
+is added with the same prominence — the history shows not just what was believed, but
 the biography of its errors. This is why the record is credible: it has never been
 made to look perfect.
 
 **Additive only.** Upgrades add capability — verification layers, tests, documentation,
-evidence. Nothing subtracts. External research is comparison material, never policy.
+evidence. Nothing subtracts. External research is comparison material, never policy [D: doctrine law].
 When a recommendation would restrict the system, it is dropped, and the drop is
 recorded.
 
 **Never prohibit, only empower.** Every gate that blocks real work is treated as a
-defect in the gate. The repair-only pipeline that blocked implementation work was
+defect in the gate [D: RUNNING-LOG 2026-09-19 repair-only gate incident]. The repair-only pipeline that blocked implementation work was
 redesigned into an additive mode with acceptance gates. The rule changes, the capability
 stays.
 
@@ -281,10 +281,10 @@ causes documented. The system would rather show you six scars than pretend to fl
 skin.
 
 **Concurrency**: the classic failure of append-only logs is the fork — two writers read
-the same tail and both append, splitting history. Here, writers are serialised, and the
-lock's identity is canonical so different spellings of the same path can't split the
-lock. The proof is a stress test: six writers, aliased paths, zero forks.
-
+the same tail and both append, splitting history. Here, writers are serialised
+(MEASURED: six-writer stress test, zero forks), and the lock's identity is canonical so
+different spellings of the same path can't split the lock. The proof is the stress test
+itself: six writers, aliased paths, zero forks.
 **Performance**: verification of tens of thousands of records completes in seconds
 because the chain is loaded once, not re-read per entry. This was itself a fixed defect:
 the original verifier was quadratic and timed out, which made a monitor report stale
@@ -311,7 +311,8 @@ documented.
 
 **Retrieval pipeline**: temporal filter → promotion state → provenance check →
 conflict handling → decay projection → ranking. Only promoted, unexpired,
-non-contradicted, provenance-verified memories reach operational use. Everything else is
+non-contradicted, provenance-verified memories reach operational use [D: pumcore/
+memory_fabric.py]. Everything else is
 available as history — which is a different, safer thing.
 
 **Probes**: poisoning (inject false memories), contradiction (conflicting claims),
@@ -400,7 +401,7 @@ losing rule is retained, never deleted.
 ## 23. The platform, product by product
 
 **pumOFFICE** — the office suite. Documents, spreadsheets, presentations, a drive with
-three views (list, canvas, stream), versions, trash, share links with passwords and
+three views (list, canvas, stream), versions, trash, share links with passcodes and
 expiry, an AI panel with grounding labels and autonomy levels, and the **Nebula** — the
 galaxy view. Doctrine gives it: signed audit trails, role-based access, honest AI
 answers, and receipts.
@@ -462,7 +463,7 @@ get lost. The context menu is suppressed during the grip — exactly like the ga
 borrows from.
 
 **The features**: grouping (Folder / Type / Size / A–Z — the galaxy rebuilds), search
-that dims non-matches and flies to the best hit, selection (click, shift-multi, click a
+that dims non-matches and flies to the top hit, selection (click, shift-multi, click a
 sun for the whole system), a metadata card, **transient links** (glowing arcs to related
 files that follow their orbits and vanish when you deselect), **wormhole travel**
 (double-click a planet to fly to a related file), and a **minimap** with your position
@@ -481,8 +482,9 @@ how many sources, how many per loop, and which loops fell short. Shortfalls are 
 — the counts are never inflated.
 
 **Merged themes**: measurement showed single themes cap at roughly 60–90 unique sources;
-pairing two related themes reliably clears 100 per loop. The research engine was changed
-accordingly — a fix found by research, applied, and verified.
+pairing two related themes clears 100 per loop in the recorded runs. The research engine
+was changed accordingly — a fix found by research, applied, and verified [M: RUNNING-LOG
+research-engine measurements].
 
 **The bridge**: a report is not a deliverable — a built, tested change is. The bridge
 extracts the numbered upgrades from a report and queues them as tasks with acceptance
@@ -522,16 +524,17 @@ the lesson was extracted so the class of error is harder to repeat. Examples:
 ## 29. Version history
 
 The doctrine is versioned, and each version is a recorded amendment — not a quiet edit.
-It began as a first rule set, gained vision checks, fact-check loops, live-ops
+It began as an original rule set, gained vision checks, fact-check loops, live-ops
 discipline, proportionality ("doctrine empowers, not prohibits"), and reached **v12
 self-sovereign**: unrestricted access to itself and the platform under proof gates, with
-the owner's veto as a safety net and the owner-only limits intact.
+the owner's veto as a safety net and the owner-only limits intact [D: rules v12].
 
 ## 30. Closing
 
 The interesting part of a governed system is not that it can act. It is that its actions
 can be **audited** — its confidence scored, its history replayed, its memory challenged,
-its autonomy computed from consequence, and its laws amended only with consent.
+its autonomy computed from consequence, and its law changes gated by proof with the
+owner's veto [D: rules v12 self-amendment].
 
 Anyone can build a system that produces answers.
 pumdoctrine exists so this platform's answers can survive scrutiny — including its own.

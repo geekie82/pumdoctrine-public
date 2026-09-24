@@ -36,12 +36,13 @@ between messages, logs every check, and writes a signed receipt on every state c
   commands: `on [interval]` | `off` | `status` | `run` | `tick`.
 - Service: `/etc/systemd/system/pumdoctrine-live.service` (Type=simple, User=si,
   Restart=on-failure, MemoryHigh=384M, MemoryMax=512M, CPUQuota=25%, TasksMax=64,
-  NoNewPrivileges, PrivateTmp). Not enabled at boot — toggle-only.
+  NoNewPrivileges, PrivateTmp). Not enabled at boot — toggle-only [D: unit file +
+  tests/test_forever_live.py].
 - State: `the private watcher state file` (0600, atomic write, fail-safe OFF).
 - Log: `the private watcher log` (JSON Lines, 5 MB rotation).
 - Checks every interval (default 60 s, min 10, max 3600): services pumdoctrine / [service] /
   [service] / [service] active; ports 15001/15002/15080/15101 open; receipt-chain count;
-  disk free (fail under 5 GB); STOP file.
+  disk free (fail under 5 GB); STOP file [D: unit config].
 - Receipts: `pumcore.audit.record(event="forever-live-toggle" | "forever-live-state-change")`.
 
 ## 4. How [service] uses it (self-toggle)
@@ -57,7 +58,8 @@ between messages, logs every check, and writes a signed receipt on every state c
 `docs/agent/FOREVER-LIVE-RESEARCH.md` — 10 loops, 49 fetched sources (2026-09-20).
 Adopted from it: systemd service + WatchdogSec-style supervision, liveness vs readiness,
 intent-file toggle with atomic writes, kill switch with fail-safe OFF, bounded resources
-(memory/CPU/tasks), transition-only alerting/receipts, JSON Lines + hash-chained audit,
+(memory/CPU/tasks), transition-only alerting/receipts, JSON Lines + hash-chained audit [D:
+docs/agent/FOREVER-LIVE-RESEARCH.md],
 structured rotation, dead-man's-switch awareness (owner-side), no self-widening of
 monitoring powers. Deferred: inotify fast path, Merkle-root anchoring outside the
 watcher directory, external dead-man's-switch pinger (needs owner-side infrastructure).
@@ -66,7 +68,7 @@ watcher directory, external dead-man's-switch pinger (needs owner-side infrastru
 
 - Unit tests: `tests/test_forever_live.py` 7 passed (fail-safe OFF, state roundtrip +
   0600, corrupt state OFF, kill switch precedence, checks shape, JSONL log + state,
-  toggle calls systemctl). Full doctrine suite: 375 passed.
+  toggle calls systemctl). Full doctrine suite: 375 passed [M 2026-09-20].
 - E2E: `on 15` -> unit active, state enabled, checks=2, failures=0, real check line
   (services active, ports open, disk 458.2 GB free, receipts 27492) in live.log.
 - Console E2E: "go forever live now please" -> tool ran, unit active; "go dark for now"
@@ -74,7 +76,7 @@ watcher directory, external dead-man's-switch pinger (needs owner-side infrastru
 - Kill switch E2E: STOP present -> `tick` paused, `on` refused with explicit error;
   STOP removed -> normal.
 - Receipts: 8 `forever-live*` records in `the private audit chain`
-  (toggle on/off + first tick transition).
+  (toggle on/off + first tick transition) [M 2026-09-20].
 
 ## 7. Fact-check notes
 
@@ -110,7 +112,7 @@ All three previously deferred items are now built and MEASURED:
    daily): anchors a Merkle root over the whole audit chain into an append-only anchor
    log, HMAC'd with `the private state area` (auto-created 0600) and chained to
    the previous anchor; `verify` recomputes the root from the chain and detects any
-   edit/delete/reorder. MEASURED on the real chain: chain_len 119,258, verify ok=True,
+   edit/delete/reorder [M 2026-09-20: chain_len 119,258 below]. MEASURED on the real chain: chain_len 119,258, verify ok=True,
    problems=[]; tamper test (edited line) detected in tests. `print-root` emits the
    root + chain head for external publication.
    - Optional external anchor: if `the private state area` names a
@@ -131,7 +133,7 @@ All three previously deferred items are now built and MEASURED:
 ## 9. External witness wired to the second machine (2026-09-20, owner: "use the second machine" / "make a folder on it")
 
 - the second machine (VPS, Tailscale the second machine, root): folder `/srv/pumdoctrine-anchors` created
-  (mode 700; 375 GB free on /dev/nvme0n1p2).
+  (mode 700; 375 GB free on /dev/nvme0n1p2) [M 2026-09-20].
 - `the private state area` = `ssh://the owner's second machine/srv/pumdoctrine-anchors`.
   `merkle_anchor.py` exports via secure copy (credential read from the
   owner secret store, 0600, never printed) and locks the remote copy to 600.
@@ -148,7 +150,7 @@ All three previously deferred items are now built and MEASURED:
 ## 10. Witness website on the second machine (2026-09-20, owner: "make a website for me to view")
 
 - URL: http://the second machine:8088/ — bound to the Tailscale IP ONLY (not reachable from
-  the LAN or public internet). Read-only static page.
+  the LAN or public internet). Read-only static page [M 2026-09-20: curl 200, below].
 - Served by `pumdoctrine-witness.service` on the second machine (python3 http.server, directory
   /srv/pumdoctrine-anchors, restarts on failure, enabled at boot).
 - Generated by `tools/witness_site.py publish`: reads the anchor log + forever-live
@@ -162,4 +164,4 @@ All three previously deferred items are now built and MEASURED:
 - CORRECTION (fact-check loop): port 80 on the second machine is ALREADY taken by an existing Docker
   container (docker-proxy 0.0.0.0:80, HTTP 200) — my first port scan truncated output
   and missed it; the site uses 8088 tailnet-only and the existing container is
-  untouched. Lesson: never truncate a port scan; read the full listener table.
+  untouched. Lesson: never truncate a port scan; read the full listener table [M 2026-09-20: curl above].

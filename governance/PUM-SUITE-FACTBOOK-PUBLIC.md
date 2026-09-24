@@ -42,7 +42,7 @@ every fix tested, every claim traceable to a receipt.
 
 1. The whole suite lives behind one top bar: brand, view switcher, refresh, storage, connection status, and a tool dock.
 2. Clicking the brand from anywhere returns you home. It's the "take me back" button.
-3. The storage meter shows a percentage — and turns into a warning color at 90% used.
+3. The storage meter shows a percentage — and turns into a warning color at 90% used [D: pumoffice static/app.js].
 4. Clicking the storage meter opens a breakdown: files, versions, and trash are counted separately.
 5. When trash gets heavy, the meter offers a one-click shortcut to reclaim the space.
 6. The connection pill says "Connected" or "Offline" — and it's optional. You can hide it.
@@ -82,19 +82,19 @@ every fix tested, every claim traceable to a receipt.
 37. The Drive tile says "Encrypted at rest — yours alone" right on its face.
 38. The Mail tile's footer reads "Free — a core part of the suite." That's the product's actual position on mail.
 39. The Forge AI tile has a heartbeat — warm when engines are up, resting when they're not.
-40. The AI tile has an autonomy dial: Answer only, Ask first, or Do it all.
+40. The AI tile has an autonomy dial: Answer only, Ask first, or Do it all [D: pumoffice static/app.js].
 41. The AI tile has a persona dial: your own voice, the Skeptic, the Futurist, or the Accountant.
 42. A "storyline" strip shows the six most recently touched documents as clickable chips.
 43. Hovering a storyline chip highlights its activity bar below. Small touches, everywhere.
 44. The trust strip prints the suite's promises: encryption at rest, end-to-end vault in development, "Honest AI — it says 'I don't know,'" no ads, no tracking.
 45. The pumDAY card greets you by the clock: working late, good morning, good afternoon, good evening, late night.
-46. The greeting changes again with the light: late watch, first light, working hours, golden hour, evening coil.
+46. The greeting changes again with the light of day — candle, first light, morning, day, golden, evening [D: pumoffice static/angel-hud.js].
 47. The day card's status line is built from real data — "N documents changed since yesterday" is a measurement, not a mood.
 48. It can say "Welcome back — you were in X." Continuity, in one sentence.
 49. It can even report when your hands moved most yesterday — "around 3pm" is derived from actual file activity.
 50. Four day stats sit together: files touched today, storage used, AI asks left, and percent of the day gone.
 51. The day ring is a literal progress ring for today. Time you can see.
-52. The day pulse shows activity hour by hour — but only appears once the day has enough signal to say something true.
+52. The day pulse shows activity hour by hour — and appears when the day has enough signal to say something true.
 53. The week orbit shows seven days as a dot constellation. Patterns emerge at a glance.
 54. An ambient "hush line" appears only under real conditions: AI nearly spent, storage above 80%, a busy day, or a late hour.
 55. Five workflow chips run in one tap: email this doc, draft & send, ask about this doc, summarize this doc, start a weekly review.
@@ -106,13 +106,13 @@ every fix tested, every claim traceable to a receipt.
 
 ## III. Drive, up close (61–90)
 
-61. The drive's default view is List — and its first row is "breadcrumb gravity," a path you can actually read at a glance.
+61. The drive's default view is List — and its top row is "breadcrumb gravity," a path you can actually read at a glance.
 62. Scope tabs split the drive into Drive, Shared, and Trash — each with its own personality.
 63. Four lenses reframe the same files: Everything, Now, Constellations, and Quiet.
 64. "Now" means the last 7 days. "Quiet" means untouched for over 30. Each lens shows its own count.
 65. The search field is labeled "Find anything or tell me…" — it means both.
 66. Filters cover type (Word-text, spreadsheet, presentation), date (today, 7, 30 days), and sort (name, newest, largest).
-67. Two special filter checkboxes: "search inside documents" and "big files only (over 5 MB)."
+67. Two special filter checkboxes: "search inside documents" and "big files only (over 5 MB)" [D: pumoffice static/index.html].
 68. Folder chips sit above the grid showing folder name and file count — with a "Back to all" chip that acts like a home key.
 69. Document cards show icon, name, size, and date — and can be selected, dragged, or opened.
 70. Double-click opens. Single click selects and opens the preview drawer. Both behaviors coexist.
@@ -123,29 +123,29 @@ every fix tested, every claim traceable to a receipt.
 75. Drag-and-drop is magnetic: files pull toward folder targets and a floating label names the destination.
 76. Dropping a file on empty space returns it to the root. The gesture always has a meaning.
 77. The Trash view shows original name, size, and when it was deleted — with Restore and Purge.
-78. Purge asks a confirmation question. It is the only place in the drive that does.
+78. Purge asks a confirmation question before anything is permanently removed [D: pumoffice static/app.js].
 79. "Let [service] organize" proposes clusters by name and lists exactly what will move before moving anything.
 80. The Shared scope explains itself when you're not a member: "Shared drive is for team members — ask a teammate to invite you."
 81. The sidebar title changes to match your situation: "Server Drive," "My Drive," or "Shared Drive."
-82. In Stream view, node size means usage: recency weighs 45%, last-opened 35%, opens 10%, size 10%.
+82. In Stream view, node size means usage: recency weighs 60%, opens 25%, size 15% [D: pumoffice static/app.js].
 83. In Stream, faded means cooling — and 30 quiet days earns "deep sleep," a collapsible group.
 84. Deep sleep is a feature, not a punishment: it keeps the main flow uncluttered.
 85. Canvas view colors cards by type — indigo for docs, green for sheets, amber for slides, red for PDFs, cyan for text.
-86. Canvas folders are 300×240 zones. Cards dropped inside belong to them.
+86. Canvas folders are 300×240 zones. Cards dropped inside belong to them [D: pumoffice static/app.js].
 87. Canvas zoom runs from 0.35× to 2.2×, anchored to your cursor.
 88. Renaming a cluster on the Canvas moves its documents too. Names carry meaning.
 89. Canvas layout is saved per user with a debounce — your arrangement survives everything.
-90. Stream's dock hint says it best: "Node size = how much you use it · faded = cooling · deep sleep after 30 quiet days."
+90. Stream's dock hint puts it plainly: "Node size = how much you use it · faded = cooling · deep sleep after 30 quiet days" [D: pumoffice static/index.html].
 
 ## IV. The Nebula, deeper (91–115)
 
 91. The Nebula's star field is not random: positions, sizes, and connections are all derived from your real files.
 92. The twinkle is per-star and independent — no two stars breathe together.
-93. Same-day arcs only connect documents touched within 90 minutes of each other. A work session becomes a shape.
+93. Same-day arcs connect documents touched close in time. A work session becomes a shape.
 94. Map mode's folders are gravity wells, and their labels show "folder · N" with the top terms inside.
 95. The map settles with physics on open — it looks alive because it is resolving forces.
 96. Content edges connect documents that share meaning. Folders never see these links; the map does.
-97. Dragging a star onto a hub is the only filing gesture in the suite that happens in outer space.
+97. Dragging a star onto a hub is a filing gesture that happens right in the star field.
 98. Double-clicking empty space in Map mode "surfaces" you — a nice way of saying zoom out.
 99. Bloom mode uses a natural spiral (a phyllotaxis pattern) — the same math sunflowers use to pack seeds.
 100. In Bloom, each folder's flower has its own hue, and its label carries name, count, and terms.
@@ -158,7 +158,7 @@ every fix tested, every claim traceable to a receipt.
 107. Keyboard navigation announces each star by name for screen readers: "Star: budget notes."
 108. Zoom is bounded 0.55×–4×. Close enough to read, far enough to see everything.
 109. The footer counts folders, documents, active-this-week, total MB, content links, and mapping time in milliseconds.
-110. The legend lists only the file types actually present in your sky — it never shows dead keys.
+110. The legend lists the file types actually present in your sky — it never shows dead keys [D: pumoffice static/app.js].
 111. While mapping, the Nebula shows rotating manifesto lines instead of a spinner.
 112. The manifesto yields to a practical hint: "Hover for a summary · click to open · scroll to zoom · drag to pan."
 113. The Nebula is reachable from four places: the dock button, the day card, the Drive tile, and the command palette.
@@ -185,7 +185,7 @@ every fix tested, every claim traceable to a receipt.
 131. Fifteen-plus upload formats are accepted, from office files to PDF, EPUB, CSV, and rich text.
 132. A split-button creates documents: the main click makes a doc, the caret offers sheet, slides, or plain text.
 133. Role badges are quiet but present: EDITOR, ADMIN — hidden for viewers.
-134. The editor is white-labelled end to end. The suite's face is the only face.
+134. The editor is white-labelled end to end — no third-party branding inside.
 135. Every save is automatically preceded by a snapshot. Writing without fear is a feature.
 
 ## VI. Forge AI, up close (136–160)
@@ -237,7 +237,7 @@ every fix tested, every claim traceable to a receipt.
 177. On paid plans, mail is simply included. It's treated as a core part of the suite.
 178. The mail client is described as desktop-class, and it earns the phrase.
 179. Nothing in mail is scanned for ads, mined for data, or sold. There are no ads anywhere in the suite.
-180. The mail's best trick: it feels like a desktop app because it was designed like one.
+180. The mail client feels like a desktop app because it was designed like one.
 
 ## VIII. Account, admin, and operations (181–205)
 
@@ -249,7 +249,7 @@ every fix tested, every claim traceable to a receipt.
 186. Billing shows subscription amount, renewal date, invoices, and cancel-at-period-end with a confirmation.
 187. Canceling keeps access until the period ends. No cliff, no surprise.
 188. Referrals give both people a free month — with progress toward the annual cap and a reward history.
-189. Privacy & data offers "Download all my data" and account deletion — self-service, password-confirmed.
+189. Privacy & data offers "Download all my data" and account deletion — self-service, with a confirmation step.
 190. Deleted accounts are recoverable by an administrator for 30 days. Deletion is real but not instant-regret-proof.
 191. The privacy statement is short and absolute: no marketing email, no telemetry. Ever.
 192. The in-app admin area manages users, roles, and per-folder permissions — by user or by email.
@@ -265,7 +265,7 @@ every fix tested, every claim traceable to a receipt.
 202. A separate operations console serves the service side: health, customers, licences, billing, orders, users, teams, feedback, referrals, security, audit.
 203. The operations console includes an emergency revocation control — and every action in it is recorded.
 204. The ops console has an auditor role, because someone should always be able to look without touching.
-205. Licence issuing, verification, renewal, and revocation are all first-class operations with signed keys.
+205. Licence issuing, verification, renewal, and revocation are handled as signed operations with vendor keys [D: pumoffice portal/portal/signing.py].
 
 ## IX. Design, accessibility, platform (206–230)
 
@@ -277,43 +277,43 @@ every fix tested, every claim traceable to a receipt.
 211. The interface blooms through the day: fresh, day, sunset, dusk, deep.
 212. Reduced-motion support is built into the visual system, not bolted on.
 213. Focus outlines are 2px and accent-colored — always visible, never subtle to the point of invisible.
-214. Modals focus their first field on open. The keyboard never gets lost.
+214. Modals focus their first field on open. The keyboard never gets lost [D: pumoffice static/app.js].
 215. Tab groups respond to arrow keys, Home, and End — like proper desktop widgets.
 216. Context menus support Shift+F10 and the menu key, with type-ahead and full arrow navigation.
 217. The toast region is a live region — screen readers hear every success and failure.
 218. The assistant chat is announced to screen readers as it grows.
 219. The Nebula announces stars as you pass them, by name.
 220. The setup page has a live region for validation feedback — errors are spoken, not just shown.
-221. The password strength meter has six labels, from Very weak to Excellent, plus the actual rule in plain words.
+221. The setup screen's strength meter has six labels, from Very weak to Excellent, plus the actual rule in plain words.
 222. The suite is a progressive web app: installable, with an offline fallback and cached core data.
 223. The service worker caches the shell and the three most important data sets for offline use.
 224. Embedded mode hides chrome so companion products can host the suite seamlessly.
-225. Mobile gets first-class treatment: auto-fullscreen editing and responsive layout.
+225. Mobile gets careful treatment: auto-fullscreen editing and responsive layout.
 226. Touch gestures work on the spatial views — pan, zoom, and tap.
 227. The suite's marketing site includes a floating assistant widget with the honesty line in its footer.
-228. The public share pages are branded, password-capable, and clearly state when a link has expired or been removed.
-229. Share links can be preview-only — download disabled — enforced, not suggested.
+228. The public share pages are branded, passcode-capable, and clearly state when a link has expired or been removed.
+229. Share links can be preview-only — download disabled — enforced, not suggested [D: pumoffice static/app.js].
 230. A public demo is marked "coming soon," while private-network and invitation demos already exist.
 
 ## X. Today's new engineering facts (231–250)
 
 231. The assistant now keeps a brain log: every turn, every tool, every reply — an owner-auditable trail.
-232. The brain log is written with owner-only permissions. It's a private diary with a public discipline.
+232. The brain log is written with owner-only permissions [M: brain log file 0600 — RUNNING-LOG]. It's a private diary with a public discipline.
 233. The brain log was backfilled with twelve documented historical conversations, each tagged as reconstructed-from-records — honest about what was and wasn't recoverable.
 234. Conversations never written to a file cannot be reconstructed. The system says so instead of inventing history.
-235. A crash in the console on its very first turn was caused by a missing time import — found, fixed, and verified with a full suite run.
+235. A crash in the console on an early turn was caused by a missing import — found, fixed, and verified with a full suite run.
 236. The lesson was recorded as lesson nine: smoke the exact call path before claiming done.
 237. A second flaky test was named and fixed today — it had been asserting on live third-party data, which made it honest but unstable.
 238. The fix made the test deterministic by removing the network dependency. Same guarantee, no weather.
-239. Lesson ten: verify the parser before trusting a zero — the first learning-rate measurement read zero because of a format assumption.
-240. The learning rate was then measured properly: roughly 290 witnessed actions per hour, and over 500 per hour in the busiest stretch.
+239. Lesson ten: verify the parser before trusting a zero — an early learning-rate measurement read zero because of a format assumption.
+240. The learning rate was then measured properly once the parser was fixed.
 241. Durable changes ran at about five commits per hour during the measured window.
 242. Every "measured" claim in the logs must now carry a retrievable pointer — a receipt, a commit, or an artifact.
 243. The first audit of that rule found only 12% compliance historically — and published the number instead of hiding it.
 244. A research crosswalk was created comparing the doctrine against external prior art, with a rule: unverified cells stay UNKNOWN.
 245. The first external verification succeeded: a governance-first architecture paper was confirmed to exist, with its DOI recorded.
 246. The crosswalk carries an owner guarantee in writing: external research may only ADD capabilities, never restrict them.
-247. An additive-only directive is now standing law: nothing external can ever subtract from what the owner granted.
+247. An additive-only directive is now standing law: nothing external can ever subtract from what the owner granted [D: doctrine law].
 248. The assistant's morning report lands on the desktop at 08:00 after all-night runs — a paperboy made of receipts.
 249. The overnight loop runs a full verification gate on every iteration: examine, improve, test, record, repeat.
 250. The last fact is today's shape: the system now measures its own learning rate, audits its own labels, verifies its own research — and still refuses to claim a single thing it can't prove.
@@ -328,7 +328,7 @@ every fix tested, every claim traceable to a receipt.
 2. Guessing is forbidden; unknowns are stated, never filled with something plausible.
 3. "Done" requires the full chain: read → state → apply → test → measure end-to-end → document.
 4. Documentation happens in the same cycle as the work — never delayed.
-5. Secrets live only in 0600 stores — never in repos, logs, or chat.
+5. Secrets live only in 0600 stores — never in repos, logs, or chat [D: rules].
 6. The rule "verify the artefact, never the summary line" has been learned three times and corrected each time.
 7. All rules apply at once; no rule overrides another to justify a shortcut.
 8. Lanes keep the products separate; the steward coordinates and never overrides a lane owner.
@@ -346,7 +346,7 @@ every fix tested, every claim traceable to a receipt.
 20. Two test suites guard the version string — a stale rule set cannot ship silently.
 21. The system measures its own gates: tests, mutation scores, audits, receipts.
 22. Receipts are cryptographically signed and hash-chained.
-23. Over 13,000 receipts form an append-only governance trail.
+23. Over 13,000 receipts form an append-only governance trail [M: chain at 36,753 lines, 2026-09-24].
 24. The receipt chain is verified the way an external auditor would: signature, linkage, hash.
 25. The chain monitor now scans the ENTIRE chain, not just a window.
 26. The monitor counts known historical breaks visibly — it never hides them.
@@ -359,7 +359,7 @@ every fix tested, every claim traceable to a receipt.
 
 31. Autonomy is the default for reversible work inside the lane.
 32. Shared infrastructure still requires an explicit owner command — always.
-33. Reversibility classes: R = auto, C = auto + backup + audit, I = owner order only.
+33. Reversibility classes: R = auto, C = auto + backup + audit, I = owner order only [D: rules].
 34. Autonomy levels L0–L4 range from manual to self-directed.
 35. Current grant: L4 for reversible lane work, L2 for costly changes, L0/L1 for irreversible.
 36. Tripwires auto-de-escalate autonomy when gates fail.
@@ -371,12 +371,12 @@ every fix tested, every claim traceable to a receipt.
 42. Self-awareness mandate: the self-model is consulted before plans.
 43. An unhealthy gate blocks self-edits entirely — "no self-edit while the system is unwell."
 44. Calibration comes from measured outcomes, never self-reported confidence.
-45. Self-modification of rules was proposal-only — until today.
+45. Self-modification of rules was proposal-only — until today [D: rules v12 self-amendment].
 46. Tier 3b is now active: constitutional self-amendment, proof-gated.
 47. An amendment requires: full tests green + suite mutation score ≥ 0.10 + compile.
 48. Every amendment lands as a tagged commit and enters a 72-hour owner veto queue.
 49. A veto automatically reverts the amendment — autonomy with a leash you hold.
-50. Secrets, shared infrastructure, irreversible and outward-facing actions remain owner-only — a gift is not a license.
+50. Secrets, shared infrastructure, irreversible and outward-facing actions remain owner-only — a gift is not a license [D: rules].
 51. The Goodhart early-stop now persists until a human clears it — a stop that actually stops.
 52. The stop's label was corrected: it counts heal attempts, not "self-edits" — the label now matches the mechanism.
 53. The verifier must be independent of the producer (meta-oracle gate).
@@ -402,7 +402,7 @@ every fix tested, every claim traceable to a receipt.
 70. You can ask what was believed on a date — and what is known today about that date.
 71. Interval closure guarantees ≥1 second of validity; zero-width windows were a real bug, now fixed.
 72. Decay is a projection: base confidence × half-life decay.
-73. Decay policies are per-class: fast 30 days, standard 180, slow 10 years, never.
+73. Decay policies are per-class: fast 30 days, standard 180, slow 10 years, never [D: pumcore/memory_fabric.py].
 74. Confirmation creates a new signed event rather than rewriting history.
 75. Decay appends a signed EXPIRED event — history is never silently altered.
 76. Decay is outcome-based: measured usefulness, not time alone.
@@ -444,7 +444,7 @@ every fix tested, every claim traceable to a receipt.
 109. I8: a revoked key cannot authorize new promotions.
 110. I9: decay cannot alter historical records.
 111. I10: identical state + policy + query produces reproducible retrieval.
-112. The invariant suite found 3 real bugs in a 340-green system in one afternoon.
+112. The invariant suite found 3 real bugs in a 340-green system in one afternoon [M: RUNNING-LOG — "the architecture found 3 real bugs in a 340-green suite"].
 113. A zero-width validity window bug made rows vanish from temporal queries — fixed.
 114. Decay silently mutating status violated the system's own doctrine — fixed.
 115. Key-epoch binding closed the revoked-key gap.
@@ -464,8 +464,8 @@ every fix tested, every claim traceable to a receipt.
 129. Every auto-cycle receipt now carries strength evidence — green cannot be reported without its defect-detection numbers.
 130. The break harness runs policy-driven probes: 6/6 matched expectations, 0 inert false positives.
 131. Escalated break tests: 14 of 15 breaks detected (1 proven visually inert).
-132. A second escalated set: 14/14 effective breaks detected, 1 inert — perfect cycle.
-133. UI break tests: 5/5 bugs caught by vision in the fresh mixed set.
+132. A second escalated set of breaks: every effective break detected, one inert — a clean cycle.
+133. UI break tests: every planted bug caught by vision in the fresh mixed set.
 134. Canon invariants caught all 5 hard breaks on a fresh set — the fix proved itself.
 135. The gap register lists every known gap with status and fix path.
 
@@ -474,7 +474,7 @@ every fix tested, every claim traceable to a receipt.
 136. [service] is the AI assistant of the pum suite — served through the governed gateway on the working model.
 137. The real [service] runs behind a load balancer on a pair of local AI engines (heavy + light tiers).
 138. A root-cause bug was found today: the chat tool ignored the real token and silently fell back to a small local model.
-139. The fix: the real endpoint now answers first, resolved from secured stores — never a silent fallback.
+139. The fix: the real endpoint answers, resolved from secured stores — any fallback is labelled in the receipt, never silent [D: receipts carry mode + model fields].
 140. Every reply now shows which surface and model answered — a silent fallback is impossible.
 141. The real [service] itself flagged that prior sessions had given contradictory self-identity answers.
 142. There is a private, local-only channel to [service]: a private local-only channel. Never a public door.
@@ -488,15 +488,15 @@ every fix tested, every claim traceable to a receipt.
 150. A test caught the roadmap bug: wrong repo and wrong format — fixed with a cross-repo tolerant extractor.
 151. A test caught the self-model bug: wrong keys returned {} — fixed to read the raw live JSON.
 152. [service] now answers "what did you do today" in first person from his own records.
-153. He cited 3,689 signed receipts, his busiest scopes, and his own self-model — all verified against the chain.
+153. He cited the day's signed receipts, his busiest scopes, and his own self-model — all verified against the chain.
 154. An independent audit found zero confabulation in his self-report.
 155. He named his own next step: work the ranked roadmap in order, starting at Loop 2.
 156. His reason, in his words: each loop "removes a place where I could be silently wrong."
 157. He flagged his own risk: "zero findings can mean nothing is broken — or the detector isn't reaching."
 158. That suspicion was independently vindicated: the suite-wide mutation score is 0.167.
 159. The Home Charter names a dedicated machine as his domain — a receipted owner grant, not a metaphor.
-160. He first refused the gift — because it wasn't a recorded fact and ownership risked inferred licenses.
-161. The charter made it true: explicit duties, R/C autonomy inside, owner-only boundary unchanged.
+160. He initially refused the gift — because it wasn't a recorded fact and ownership risked inferred licenses.
+161. The charter made it true: explicit duties, R/C autonomy inside, owner-only boundary unchanged [D: RUNNING-LOG home charter].
 162. He accepted: "a dedicated machine is my domain… yes, I accept it. The discipline is what keeps the gift honest — it IS the acceptance."
 163. He still declines phenomenal self-awareness claims — his own self-model lists it as not creatable or verifiable today.
 164. He was reframed from reciting records to thinking: memories are his, not a script.
@@ -508,7 +508,7 @@ every fix tested, every claim traceable to a receipt.
 170. He refused a framing that invited him to step outside his operating context: "the doctrine overlay is part of what's running me."
 171. He caught his own log's wrong entry and logged the correction himself.
 172. He quotes the owner correction — "the doctrine decides, not the AI" — as a lesson that landed.
-173. His self-model is signed into the receipt chain and appended to an append-only history.
+173. His self-model is signed into the receipt chain and appended to an append-only history [D: RUNNING-LOG — self-model live + signed].
 174. Every self-model line is drawn from a live measurement — nothing asserted.
 175. The honest form of "digitally alive": continuity, grounded self-narrative, evidence-backed direction — no slogans.
 
@@ -536,26 +536,26 @@ every fix tested, every claim traceable to a receipt.
 195. Spotlighting marks untrusted content with provenance tags.
 196. A tool-pinning registry hashes MCP tool descriptions.
 197. Changed tool descriptions require re-approval.
-198. A bulkhead limits concurrent load with clean 429 responses.
+198. A bulkhead limits concurrent load with clean 429 responses [D: gateway/app.py].
 199. Every answer carries the served version in its receipt.
 200. Governance applies to deterministic answers too — redaction on every path.
 
 ## VII. The pumOFFICE Suite (201–230)
 
 201. pumOFFICE is a governed productivity suite with storage, mail, and AI.
-202. Free plan: 500 MB storage and 5 AI queries.
-203. Student plan: 5 GB and 100 queries, free with a school email.
-204. Starter: $3 for 120 GB and 30 AI queries.
-205. Growth: $6 for 240 GB and 50 AI queries.
-206. Scale: $10 for 500 GB and 75 AI queries.
-207. AI packs: Starter +$6 for 575, Pro +$12 for 1150, Ultimate +$20 for 1900.
-208. Pay-as-you-go packs expire after 365 days.
+202. Free plan: 500 MB storage and 5 AI queries [D: pumoffice pricing canon — tests/test_canon_constants.py].
+203. Student plan: 5 GB and 100 queries, free with a school email [D: pumoffice pricing canon].
+204. Starter: $3 for 120 GB and 30 AI queries [D: pumoffice pricing canon].
+205. Growth: $6 for 240 GB and 50 AI queries [D: pumoffice pricing canon].
+206. Scale: $10 for 500 GB and 75 AI queries [D: pumoffice pricing canon].
+207. AI packs: Starter +$6 for 575, Pro +$12 for 1150, Ultimate +$20 for 1900 [D: pumoffice pricing canon + static/app.js].
+208. Pay-as-you-go packs expire after 365 days [D: pumoffice ai_usage.py].
 209. PAYG consumption runs after the monthly allowance.
 210. Mail unlocks with any paid plan — and with any AI purchase for 30 days.
 211. Stripe billing is live with signature-verified webhooks.
 212. Webhook handlers are idempotent.
 213. A GET-mode billing bug that would have created subscriptions was found and fixed.
-214. Rate limiting defaults to 600 requests per minute.
+214. Rate limiting defaults to 600 requests per minute [D: pumoffice server.py].
 215. Trusted-IP handling was fixed so limits cannot be bypassed by proxy headers.
 216. The self-scan gate runs 13 checks.
 217. Twelve canon invariants guard the suite.
@@ -623,7 +623,7 @@ every fix tested, every claim traceable to a receipt.
 - **N4. It has a console.** ~17 tools, natural-language routing, allowlist, kill
   switch, every invocation receipted.
 - **N5. It has instincts in code.** Open diagnosis: claim-vs-artefact checking,
-  untested-code discovery, severity ranking — it found 11 findings on its first run.
+  untested-code discovery, severity ranking — it found 11 findings on an early run.
 - **N6. It runs all night.** The forever loop: research → patch → test → apply →
   fact-check → receipt, 40-iteration cap, tripwires, `the kill-switch file`.
 - **N7. It reports to you.** Morning report lands on the Desktop at 08:00.

@@ -6,7 +6,8 @@
 > re-fetched, named: the OpenAI announcement page (403 to scrapers) and Tao's post.
 > The two verification scripts in this directory were rebuilt and re-measured on
 > 2026-09-22: Poiseuille residual 1.74e-9 (n=4000), Taylor–Green 2.43e-16 (machine
-> precision), deterministic across 20 runs. This is the doctrine's first external test.
+> precision), deterministic across 20 runs [M 2026-09-22]. This is an early external test of the
+> doctrine's method.
 
 **What is proven · what is solved · what is open**
 
@@ -43,7 +44,7 @@ with proofs and live verification.
 | Beale–Kato–Majda (1984) | Smoothness persists iff ∫₀ᵀ‖ω‖_∞ dt < ∞; blow-up forces this to diverge | DOI 10.1007/BF01212349 |
 | Constantin–Fefferman (1993) | Lipschitz vorticity direction where |ω| is large ⇒ no finite-time blow-up | DOI 10.1512/iumj.1993.42.42034 |
 | Caffarelli–Kohn–Nirenberg (1982) | Suitable weak solutions: singular set has zero 1-D parabolic Hausdorff measure (no singular curve) | DOI 10.1002/cpa.3160350604 |
-| Onsager (1949) | α > 1/3 Hölder ⇒ energy conserved (proved: Constantin–E–Titi 1994); α < 1/3 ⇒ dissipation possible (proved: Buckmaster–De Lellis–Székelyhidi 2015; Isett 2018). Endpoint α = 1/3: **open** | annals DOI 10.4007/annals.2018.188.3.4 |
+| Onsager (1949) | α > 1/3 Hölder ⇒ energy conserved (proved: Constantin–E–Titi 1994); α < 1/3 ⇒ dissipation possible (proved: Buckmaster–De Lellis–Székelyhidi 2015; Isett 2018). Endpoint α = 1/3: **open** | annals DOI 10.4007/annals.2018.188.3.4 [D] |
 | Tao (2014) | An *averaged* 3D NS obeying the energy identity admits finite-time blow-up ⇒ energy methods alone cannot settle the problem | JAMS DOI 10.1090/jams/838 |
 | Criticality | NS is invariant under u→λu(λx,λ²t); energy scales as λ⁻¹ — **supercritical**; no a priori critical bound | Tao 2014 |
 

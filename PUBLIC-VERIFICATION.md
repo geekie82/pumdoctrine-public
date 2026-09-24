@@ -7,7 +7,7 @@ You do not have to believe any claim in this repository. This page lets you chec
 1. `sample-receipt.json` — a receipt produced by the system's signing key.
 2. `public-key.pem` — the public half of that key.
 3. `verify_receipt.py` — a standalone verifier that uses only the `cryptography`
-   library (no code from this system).
+   library (no code from this system) [D: import scan of the published file].
 
 ```bash
 pip install cryptography
@@ -20,7 +20,7 @@ If you edit one character of the receipt, it fails. That is the point.
 
 ## Verify without trusting any code in this repo
 
-Step 1 — openssl only (nothing from this repo):
+Step 1 — openssl alone (nothing from this repo):
 
     base64 -d PUBLIC-MANIFEST.sig > /tmp/m.sig
     openssl pkeyutl -verify -pubin -inkey public-key.pem -rawin -in PUBLIC-MANIFEST.json -sigfile /tmp/m.sig
@@ -35,7 +35,7 @@ with the hashes inside PUBLIC-MANIFEST.json.
 
 Step 3 — now run either verifier (two independent implementations that must agree):
 
-    sh verify.sh          (openssl only — no python, no libraries)
+    sh verify.sh          (openssl alone — no python, no libraries)
     python prove_it.py    (needs: pip install cryptography)
 
 Expected: EVIDENCE VERIFIED from both.

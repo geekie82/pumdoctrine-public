@@ -14,10 +14,10 @@ appended, never rewritten.
 9. A loop count is total cycles, not additional ones.
 
 23. After rotating a secret, restart every service that caches it at startup —
-    disk-correct is not service-correct.
-24. A proxy that normalizes messages must merge, not first-pick: dropped context is
-    invisible and produces confident false denials.
-25. Never enroll from the first camera frame: auto-exposure warmup frames are
+    the file being correct is not the service being correct.
+24. A proxy that normalizes messages must merge, not pick one and drop the rest: dropped
+    context is invisible and produces confident false denials.
+25. Never enroll from the camera's opening frame: auto-exposure warmup frames are
     near-black and produce garbage templates. Gate on brightness and detector
     confidence.
 26. Publish negative results: the semantic search experiment did not beat keyword
