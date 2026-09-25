@@ -2,7 +2,7 @@
   "files": {
     "EXTERNAL-VERIFICATIONS.md": "eed785e41d815270fa5b52b6092f797c6b1e04bc3cc3ec0f072686deae12c499",
     "LICENSE": "dd49934c7175458496f2e1fdadb45b7691b7851ef71e2dc034802ee66531fa13",
-    "PUBLIC-VERIFICATION.md": "8b9fc990ffa598f575ff156225e46fbbf7bcf8f80686c543a4386eaf78f72a7f",
+    "PUBLIC-VERIFICATION.md": "b67e89ffdc87a483b8a46b8575f7b3e69ffc2eca29904511542c57a72dfb64eb",
     "README.md": "afbbd465de875a46cdcf4a76cb84b4b33d525106b2fce76865f1d98c0d8f5d21",
     "case-studies/navier-stokes-2026-09-14/ANSWER.md": "c7a84005c88b7c7241b456c4a3d2b30fab9b08570fc51d6914a1d5d4e6d5b199",
     "case-studies/navier-stokes-2026-09-14/README.md": "93be328ecccca87b4302a11418f633840299f539fbe87d0d2f982f8551b5677e",
@@ -23,7 +23,7 @@
     "verify.sh": "93b594e264bd4a249f4dd645d005e3cd5c0ffa85979ebedaf3b9eefdb6e8963e",
     "verify_receipt.py": "ab700f3c2096e525370fe50c17ec4391f2c42d53cfa474129d3c4a696ce14777"
   },
-  "generated": "2026-09-24",
+  "generated": "2026-09-26",
   "note": "sha256 of every published file; vc-sample.json excluded (self-referential)",
-  "manifest_sha256": "7d6b3db9a01918ac6606ac2c902387bd7a90790bf1560f6a171bafb60b6c5d31"
+  "manifest_sha256": "66d9b54e3516b0f35403487cdc5376b10412467f693c23052933e2781e43d57a"
 }
