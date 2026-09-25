@@ -1,7 +1,7 @@
 {
   "files": {
     "EXTERNAL-VERIFICATIONS.md": "eed785e41d815270fa5b52b6092f797c6b1e04bc3cc3ec0f072686deae12c499",
-    "LICENSE": "74cb3727f6c0045795956f6fbb76ce78ec7b424a693c4b7b02070a12677a7d31",
+    "LICENSE": "fb48d79b4b70b6562bfc228b2626496eb0f1e305bc080464e651d78edb59ac61",
     "PUBLIC-VERIFICATION.md": "b67e89ffdc87a483b8a46b8575f7b3e69ffc2eca29904511542c57a72dfb64eb",
     "README.md": "afbbd465de875a46cdcf4a76cb84b4b33d525106b2fce76865f1d98c0d8f5d21",
     "case-studies/navier-stokes-2026-09-14/ANSWER.md": "c7a84005c88b7c7241b456c4a3d2b30fab9b08570fc51d6914a1d5d4e6d5b199",
@@ -25,5 +25,5 @@
   },
   "generated": "2026-09-26",
   "note": "sha256 of every published file; vc-sample.json excluded (self-referential)",
-  "manifest_sha256": "1fbf5756a3b570793fe8010c54ce6c21885435f8ac2190da360320b725f5f80e"
+  "manifest_sha256": "b0941a30c4f0a7a2928a217be869cf376e49bbbce7a24990918d2667bc660bce"
 }

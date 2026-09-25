@@ -31,8 +31,9 @@ access, deceive, conduct unlawful surveillance, develop weapons, or evade legal 
 5. KEYS, QUOTAS, DATA
 Keys are your responsibility; notify us of compromise. Per-plan quotas apply; payload cap is
 currently 64 KB. We process submission content to produce receipts, do not train models on
-your data, and act under Thailand's Personal Data Protection Act B.E. 2562 (2019). Retention
-and cross-border safeguards are as agreed in your order.
+your data, and handle personal data under the data-protection law of our home jurisdiction
+(a Data Processing Addendum is available). Retention and cross-border safeguards are as
+agreed in your order.
 
 6. FEES
 Fees, currency and payment terms are as stated in your order.
@@ -58,8 +59,9 @@ never silent. Receipts signed by a revoked key are flagged invalid by independen
 verification. Clauses 3, 4, 8, 9 and 11 survive termination.
 
 11. GOVERNING LAW
-This licence is governed by the laws of Thailand. Disputes are subject to the courts of
-Thailand unless the parties agree in writing to arbitration.
+This licence is governed by the laws of the Licensor's home jurisdiction (stated in your
+order). Disputes are subject to the competent courts there unless the parties agree in
+writing to arbitration.
 
 12. THIS REPOSITORY
 This repository contains governance documentation and the published verifier scripts
