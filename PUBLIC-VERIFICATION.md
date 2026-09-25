@@ -59,6 +59,16 @@ This root is published here so it cannot be quietly rewritten later: if the inte
 record is changed, the root no longer matches what was published today. A copy of the
 anchor is also held outside the main machine.
 
+## The record root as of 2026-09-24 (appended — the 2026-09-20 root above is kept as history)
+
+- Signed receipts in the chain: **36,753**
+- Audit entries: **176,114**
+- Chain root (signed snapshot `mind.json`): `e7ac71f560cddb7d76898aa081f3d39ea4a2197c2452916e6c71637ac2fa717d`
+- Checkpoint 4 Merkle root (`checkpoints.json`, frozen over all 36,753 receipts):
+  `5ed215c5547c467579cd7439af1d770a950f657fd09706dd9a171681f6126c73`
+
+Corrections are appended, never rewritten — both roots are kept.
+
 
 ## It proves the signing system is real. It doesnt prove every claim.
 
