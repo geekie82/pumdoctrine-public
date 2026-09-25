@@ -1,10 +1,67 @@
+PUMSOFT SUITE — COMMERCIAL LICENCE & SERVICE TERMS (Interim)
 Copyright (c) 2026 Madame Hong Co. Ltd. All rights reserved.
+Version 0.1 (interim) — 2026-09-26. A final version is under legal review; this is not legal advice.
 
-This repository contains governance documentation and the published verifier scripts (prove_it.py, verify.sh). No product source code is published here.
+This file is the current licence for the pum suite and its verifier service. Where it
+refers to the service it is a commercial licence; where it refers to this repository it is a
+publication notice. The verifier clients are published so you can verify without trusting us.
 
-No permission is granted to copy, modify, distribute, republish, or reuse the pum suite
-name, architecture, designs, documents, or any part of the system described, in whole or
-in part, without prior written permission from the owner. Viewing this repository does
-not grant a license of any kind.
+1. DEFINITIONS
+"Service" — the verifier service: you submit an artefact, we verify it against a named
+policy, and return a signed receipt. "Receipt" — a signed record of what was submitted and
+verified; it proves provenance and integrity, not the real-world truth of the artefact.
+"Doctrine" — our published operating rules; "Doctrine Hash" — their published hash.
 
-The documents are published for transparency about how the system governs itself.
+2. GRANT
+Subject to these terms you may use the Service to submit artefacts, receive receipts, verify
+receipts, and integrate verification into your own products. The Service verifies only: it
+has no execution, shell, file-access or agent capability, and grants none.
+
+3. DOCTRINE-HASH BINDING (core condition)
+This licence is valid only while the deployed Doctrine Hash equals a hash in our published
+registry and the receipt's doctrine_hash matches it. A modified ruleset voids it
+automatically, without notice. The condition is technical, not merely contractual.
+
+4. RESTRICTIONS
+You shall not: reverse engineer the Service to build or operate an autonomous agent; resell,
+white-label or present our verification as your own; remove or alter Doctrine hashes;
+misrepresent verification results; or use the Service to harm people, gain unauthorised
+access, deceive, conduct unlawful surveillance, develop weapons, or evade legal duties.
+
+5. KEYS, QUOTAS, DATA
+Keys are your responsibility; notify us of compromise. Per-plan quotas apply; payload cap is
+currently 64 KB. We process submission content to produce receipts, do not train models on
+your data, and act under Thailand's Personal Data Protection Act B.E. 2562 (2019). Retention
+and cross-border safeguards are as agreed in your order.
+
+6. FEES
+Fees, currency and payment terms are as stated in your order.
+
+7. AUDIT
+A written compliance report may be requested annually; on-site audit only for cause, with
+reasonable notice and confidentiality.
+
+8. INTELLECTUAL PROPERTY
+All rights in the Service, Doctrine and receipt format remain with the licensor. The verifier
+clients are published publicly so you can verify independently of us.
+
+9. WARRANTY & LIABILITY
+The Service is provided "as is", without warranty of fitness for a particular purpose. A
+receipt evidences what was submitted and verified; it does not guarantee truth, legality or
+non-infringement. Aggregate liability is capped at the fees paid in the prior 12 months; no
+indirect or consequential liability.
+
+10. TERM, TERMINATION & REVOCATION
+Either party may terminate for material breach uncured after notice. Keys may be revoked for
+misuse, key compromise, non-payment or a legal order; revocation is signed, append-only and
+never silent. Receipts signed by a revoked key are flagged invalid by independent
+verification. Clauses 3, 4, 8, 9 and 11 survive termination.
+
+11. GOVERNING LAW
+This licence is governed by the laws of Thailand. Disputes are subject to the courts of
+Thailand unless the parties agree in writing to arbitration.
+
+12. THIS REPOSITORY
+This repository contains governance documentation and the published verifier scripts
+(prove_it.py, verify.sh). No product source code is published. The documents are published
+for transparency about how the system governs itself.
