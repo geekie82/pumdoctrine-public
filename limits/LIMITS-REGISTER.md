@@ -77,3 +77,20 @@ Each limit is published next to the wins, on purpose.
   exists separately in the literature; the composition is unproven; claim-checked,
   not claimed. Usage exports reconcile to zero discrepancy across all hourly cells
   (measured, receipt available).
+
+## 2026-09-26 additions (measured)
+
+- **Doctrine v12 — SELF-SOVEREIGN** is the current published rule version.
+- **Azure OpenAI and AWS Bedrock.** The gateway's inbound and upstream routes for both are
+  live (routed and authenticated). **Not yet proven end-to-end against a real Azure
+  resource** — staging was routed and authenticated with a stub upstream. Stated as pending,
+  not claimed.
+- **Interim licence.** `LICENSE` is now an **interim commercial licence**. It supersedes the
+  earlier "grants nothing" notice; a final version is under legal review.
+- **Anchor disclosure.** Merkle anchors 7 and 8 no longer match the chain because an earlier,
+  documented repair re-signed entries inside their range. Both anchors are **retained and
+  listed** as disclosed history (never deleted and never silently passed), and anchoring
+  resumed. The tamper-evidence worked: it detected the rewrite.
+- **Local model fit.** The local engine runs mostly on CPU on the current card (slow); cloud
+  models are recommended for production, with local kept as the fallback.
+- **External audit.** Still not performed.

@@ -43,6 +43,15 @@ Change one letter in sample-receipt.json, run again → it fails. That's the poi
 6. Scars are curated and disclosed — gate changes (e.g. authoritative-domain bypass)
    are docstring-documented, provenance-tagged, and logged in the training ledger.
 
+## New in this edition (2026-09-26)
+
+- **Doctrine v12 — SELF-SOVEREIGN** is the current published rules version (the site states it in the header).
+- **Multi-provider.** The gateway now speaks **Azure OpenAI** and **AWS Bedrock** natively — inbound and upstream — alongside OpenAI and local models.
+- **Per-account entitlements.** Each account covers one or more providers; the portal is the access point; billing is wired (test mode).
+- **Interim licence published.** The earlier "grants nothing" notice is replaced by an **interim commercial licence**; a final version is under legal review.
+- **Anchor honesty.** Two historical Merkle anchors are **disclosed** as a legitimate rewrite (the tamper-evidence detected it); both remain listed, never hidden.
+- **Early access.** The site is now in early access.
+
 ## New in this edition (2026-09-24)
 
 - The claim gate is enforced at publish: dishonest statements cannot ship, and

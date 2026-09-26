@@ -3,7 +3,7 @@
     "EXTERNAL-VERIFICATIONS.md": "eed785e41d815270fa5b52b6092f797c6b1e04bc3cc3ec0f072686deae12c499",
     "LICENSE": "fb48d79b4b70b6562bfc228b2626496eb0f1e305bc080464e651d78edb59ac61",
     "PUBLIC-VERIFICATION.md": "b67e89ffdc87a483b8a46b8575f7b3e69ffc2eca29904511542c57a72dfb64eb",
-    "README.md": "afbbd465de875a46cdcf4a76cb84b4b33d525106b2fce76865f1d98c0d8f5d21",
+    "README.md": "543d4f20136a72dd8910b604795a4e258cbf6a384c67c66cb15214527a357fc6",
     "case-studies/navier-stokes-2026-09-14/ANSWER.md": "c7a84005c88b7c7241b456c4a3d2b30fab9b08570fc51d6914a1d5d4e6d5b199",
     "case-studies/navier-stokes-2026-09-14/README.md": "93be328ecccca87b4302a11418f633840299f539fbe87d0d2f982f8551b5677e",
     "case-studies/navier-stokes-2026-09-14/verify_poiseuille.py": "2b667ee6968d3e98fd96a5b7e05b2a8080b97cb55fe31d229bc9304395e3f919",
@@ -14,7 +14,7 @@
     "governance/PUMDOCTRINE-EXPLAINED.md": "46057231b84c3db7e69ffb932a97024137e57beb17a080561f6e11f5b9eb1e3f",
     "governance/VISION-ID-DOCTRINE.md": "57d868a1d313c49c7acb25aaee4dfced429c1420b170f6a1b780d358a6783f3c",
     "lessons/LESSONS.md": "b56f31f4211b52b8b8fdd14a54aa7301552b20a1c3695be995d441453ef2b1ff",
-    "limits/LIMITS-REGISTER.md": "b212d09ec39b0b24bf735c3f49ce7b9a38e75e2d38c327b830223726c0a586f1",
+    "limits/LIMITS-REGISTER.md": "13c7d01c6d57aefc8bc25f6a47f9ff16ed921799b52e9da5307f29e03b976294",
     "prove_it.py": "4a5bcc56affa482b9e1d1ceb451ffe8d9b74ef506b4bae75d4aa83c2cfc84cd9",
     "public-key.pem": "ee38358947370ba747d40fb9cb9a7a4b1e34f51f5860273f668b1d72c00f990d",
     "sample-receipt.json": "8592c983ea3f609abff361ea48c244c60ec4d5e23514eb5fd12a0b07e78b243a",
@@ -25,5 +25,5 @@
   },
   "generated": "2026-09-26",
   "note": "sha256 of every published file; vc-sample.json excluded (self-referential)",
-  "manifest_sha256": "b0941a30c4f0a7a2928a217be869cf376e49bbbce7a24990918d2667bc660bce"
+  "manifest_sha256": "6f80a1dd3e33f45b61005cfa028db13df59bcd522e8ec0e90b8909388e13e446"
 }
