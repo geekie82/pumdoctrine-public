@@ -552,3 +552,6 @@ The earlier motto "Never prohibit, only empower" / "I don't prohibit AI, I empow
 > I empower them to act — and hold them to the truth.
 
 The system holds a cache floor on stable sessions — a floor, not a ceiling. The number, its counter (upstream_cache), and its measurement live in the rule store, not here.
+
+
+**MOTTO — human/explained form (V1), appended 2026-09-28.** Don't prohibit yourself. Empower yourself — under the ever-watchful eye of doctrine.
