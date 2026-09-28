@@ -76,3 +76,11 @@ page itself remains private.
 - **Refreshed numbers:** signed receipts 38,761; signed record entries 200,338; pumdoctrine tests 744/7; lab 919/7;
   product-tree mutation 0.205; doctrine hash e02decee83e1f6a7.
 - Unchanged limits: external audit still not performed; local model runs mostly on CPU.
+
+## Current state (appended 2026-09-28; supersedes prior numbers here by reference)
+- Doctrine hash **a00efe8f3c2e2b48** (published); gateway 1.0.0-rc4.
+- Live verification: `curl -sL https://pumdoctrine.com/verify-online.sh | sh` -> EVIDENCE VERIFIED.
+- Decision A (2026-09-28): gateway MODE overlays are legitimate doctrine; the contradictory client-side instruction is retired.
+- Falsification instrument: verify data integrity, detect lookahead, audit survivorship, restatement, PBO/DSR, calibration. Verdict = NO EXPLOITABLE SIGNAL in the classes tested.
+- Verdict/instrument docs live in the lane-D lab (`quant-lab/QUANT-VERDICT.md`, `quant-lab/INSTRUMENT-STATUS.md`); no public URL yet ([UNKNOWN] link).
+- No stale cache number here; the cache rule (floor 99.01%) lives in the rule store.
