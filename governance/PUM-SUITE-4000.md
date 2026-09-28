@@ -63,4 +63,4 @@ The earlier motto "Never prohibit, only empower" / "I don't prohibit AI, I empow
 > I don't prohibit AI. I prohibit lying.
 > I empower them to act — and hold them to the truth.
 
-The middle clause is load-bearing: empowerment is not the absence of gates. The four live hard prohibitions are truth requirements, not cages — cache-ratio floor (99.15%), no pasting transcripts, no consciousness claims, no overclaiming.
+The cache target is a floor, not an aspiration. The number and its evidence live in cache_ratio_target — see rules/AGENT-RULES.json.
