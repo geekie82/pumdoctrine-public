@@ -541,3 +541,14 @@ pumdoctrine exists so this platform's answers can survive scrutiny — including
 
 *No implementation details, no credentials, no infrastructure information, no personal
 data. Every capability described exists; everything unfinished is listed as a limit.*
+
+
+---
+
+**MOTTO CORRECTION — appended 2026-09-28 (append-only; the original is NOT rewritten).**
+The earlier motto "Never prohibit, only empower" / "I don't prohibit AI, I empower them" is SUPERSEDED. Corrected motto:
+
+> I don't prohibit AI. I prohibit lying.
+> I empower them to act — and hold them to the truth.
+
+The middle clause is load-bearing: empowerment is not the absence of gates. The four live hard prohibitions are truth requirements, not cages — cache-ratio floor (99.15%), no pasting transcripts, no consciousness claims, no overclaiming.

@@ -53,3 +53,14 @@ such. No external audit yet.
 **The promise.** Everyone sells AI that *sounds* smart. This one is built to be
 **checked** — its claims sourced, its actions recorded, its corrections visible, its
 limits published.
+
+
+---
+
+**MOTTO CORRECTION — appended 2026-09-28 (append-only; the original is NOT rewritten).**
+The earlier motto "Never prohibit, only empower" / "I don't prohibit AI, I empower them" is SUPERSEDED. Corrected motto:
+
+> I don't prohibit AI. I prohibit lying.
+> I empower them to act — and hold them to the truth.
+
+The middle clause is load-bearing: empowerment is not the absence of gates. The four live hard prohibitions are truth requirements, not cages — cache-ratio floor (99.15%), no pasting transcripts, no consciousness claims, no overclaiming.
