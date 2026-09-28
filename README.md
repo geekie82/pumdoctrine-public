@@ -45,7 +45,7 @@ Change one letter in sample-receipt.json, run again → it fails. That's the poi
 
 ## New in this edition (2026-09-26)
 
-- **Doctrine v12 — SELF-SOVEREIGN** is the current published rules version (the site states it in the header).
+- **Governed rule set.** pumdoctrine runs under the current published rule set; the exact version and its hash are published in the registry.
 - **Multi-provider.** The gateway now speaks **Azure OpenAI** and **AWS Bedrock** natively — inbound and upstream — alongside OpenAI and local models.
 - **Per-account entitlements.** Each account covers one or more providers; the portal is the access point; billing is wired (test mode).
 - **Interim licence published.** The earlier "grants nothing" notice is replaced by an **interim commercial licence**; a final version is under legal review.
@@ -66,3 +66,13 @@ Change one letter in sample-receipt.json, run again → it fails. That's the poi
 
 The audit chain is Merkle-anchored and a copy is held on a second machine; the witness
 page itself remains private.
+
+## Status 2026-09-28 (appended)
+- New: **AI-Governance Trio** — consensus engine, independent monitor, escalation service,
+  heartbeat; labelled **"two independent voices + one synced mirror"**.
+- **Proven live:** consensus trap test, heartbeat, escalation / no-response / resume,
+  owner-only > consensus, monitor contradiction.
+- **Pending:** notification channel; local voice host; external verifier (**0 entries**).
+- **Refreshed numbers:** signed receipts 38,761; signed record entries 200,338; pumdoctrine tests 744/7; lab 919/7;
+  product-tree mutation 0.205; doctrine hash e02decee83e1f6a7.
+- Unchanged limits: external audit still not performed; local model runs mostly on CPU.

@@ -80,7 +80,7 @@ Each limit is published next to the wins, on purpose.
 
 ## 2026-09-26 additions (measured)
 
-- **Doctrine v12 — SELF-SOVEREIGN** is the current published rule version.
+- **Governed rule set.** pumdoctrine runs under the current published rule set; the exact version and its hash are published in the registry.
 - **Azure OpenAI and AWS Bedrock.** The gateway's inbound and upstream routes for both are
   live (routed and authenticated). **Not yet proven end-to-end against a real Azure
   resource** — staging was routed and authenticated with a stub upstream. Stated as pending,
@@ -94,3 +94,19 @@ Each limit is published next to the wins, on purpose.
 - **Local model fit.** The local engine runs mostly on CPU on the current card (slow); cloud
   models are recommended for production, with local kept as the fallback.
 - **External audit.** Still not performed.
+
+## 2026-09-28 additions (measured, appended)
+
+- **AI-Governance Trio (new).** A governed **two-voice consensus layer**: two independent
+  voices reach consensus on the provable and escalate to the human otherwise. Honest label:
+  **two independent voices + one synced mirror** (two share a model/brain) — **not** three
+  independent verifiers. Proven live (2026-09-28): consensus trap test, heartbeat,
+  escalation / no-response / resume, owner-only > consensus, monitor contradiction.
+- **Pending / limits:** notification-channel destination not yet named; the intended local
+  voice host is offline; **external verification remains 0 entries**.
+- **Cache-hit target:** **99%** (owner direction 2026-09-28); measured partial day **97.47%**.
+- **Refreshed numbers (2026-09-28):** signed receipts **38,761**; signed record entries **200,338**;
+  pumdoctrine tests **744/7**; lab **919/7**; product-tree mutation **0.205**; doctrine hash
+  **e02decee83e1f6a7** (published).
+- **Honest:** consensus is evidence, not proof; correlated errors can agree on the same
+  wrong answer — the design escalates rather than certifying in that case.

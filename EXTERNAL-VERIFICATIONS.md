@@ -14,3 +14,6 @@ No entry is invented. An empty log is an honest log.
 - Auditing the receipt chain, the witness copy, or the checkpoints.
 - Finding a defect, an overclaim, or a way to make the record lie.
 A failure found by an outsider is the most valuable entry this log can hold.
+
+## STATUS 2026-09-28 (appended)
+Entries: **0**. No outside party has checked us yet. Stated as such, not hidden.
